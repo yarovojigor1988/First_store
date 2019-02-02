@@ -2,17 +2,23 @@
 	// 1.1 Colors
 $black: #000;
 $white: #fff;
+$green: #8bc34a;
+$red: #e74c3c;
+$dark-blue: #263238;
 
 	// 1.2 Other
 
 // 2. Work variables
 	// 2.1 Colors
-$main-color: $black;
+$main-color: $green;
+$second-main-color: $red;
+$background-color: $white;
+$second-background-color: $dark-blue;
 
-	// 2.2 Typography (fonts and text variables)
+// 2.2 Typography (fonts and text variables)
 $text-color: $black;
 
-$f-family-base: 'Open Sans', sans-serif;
+$f-family-base: 'Roboto', Arial, sans-serif;
 $f-size-base: 14px;
 
 	// 2.3 Media
