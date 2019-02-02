@@ -3,6 +3,18 @@
         max-width: 1200px;
         width: 100%;
         padding: 0 15px;
+        display: flex;
+    }
+
+    &_container-dark-blue{
+        background-color: $second-background-color;
+        color: #fff;
+        min-width: 100vh;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
     }
 
     &_row {
