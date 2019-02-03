@@ -1,9 +1,9 @@
 .wrapper {
 	display: flex;
 	flex-direction: column;
-  width: 100%;
-  overflow: hidden;
-  min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    min-height: 100vh;
   
   &_flexfix {
     display: flex;
@@ -19,4 +19,66 @@
 .main {
 	flex-grow: 1;
 	width: 100%;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.welcome_text {
+	color: $white;
+	font-family: $f-family-base;
+	text-align: center;
+	margin: 160px 0 55px 0;
+
+	p {
+		font-size: 20px;
+		font-weight: 300;
+	}
+}
+
+h1 {
+	font-size: 48px;
+}
+.welcome{
+	background-size: cover;
+}
+
+.form_input-holder{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form_input{
+	  width: 670px;
+	  margin-bottom: 170px;
+    padding: 25px;
+    outline: none;
+    font-size: $f-size-base;
+    border-radius: 4px;
+    border: 1px solid #e5e5e5;
+}
+
+.form_input:focus{
+	box-shadow: 1px 1px 10px rgba(139, 195, 74, .75);
+}
+
+.form_input-holder i{
+	position: relative;
+    z-index: 1;
+    left: -45px;
+    top: 5px;
+    font-size: 25px;
+    color: #90a4ae;
+}
+input::-webkit-input-placeholder {
+    color: #90a4ae;
+    letter-spacing: .1em;
+
+}
+input:-moz-placeholder {
+	color: #90a4ae;
+	letter-spacing: .1em;
 }
