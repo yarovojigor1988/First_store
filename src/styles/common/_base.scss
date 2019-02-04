@@ -267,3 +267,62 @@ input:-moz-placeholder {
     }
   }
 }
+
+
+.product{
+
+  &_card {
+
+    position: relative;
+
+      &-img{
+          display: block;
+      }
+
+      &-info {
+          display: flex;
+          border-bottom: 1px solid #e7ecf2;
+          padding: 25px 25px 15px;
+      }
+  }
+
+  &_label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 0;
+    height: 0;
+
+    &:before{
+      content:'';
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-style: solid;
+      border-width: 64px 64px 0 0;
+      width: 0;
+      height: 0;
+
+    }
+
+    &:after{
+      content: '';
+      color: $white;
+      font-family: "FontAwesome";
+    }
+
+    &--hit{
+      &:before{
+        border-color: $main-color transparent transparent transparent;
+
+      }
+      &:after {
+        content:'\f0e7';
+        position: absolute;
+        top: 12px;
+        left: 15px;
+      }
+    }
+  }
+}

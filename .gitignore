@@ -30,4 +30,4 @@ dev
 .sass-cache
 #Gemfile*
 
-/src/package-lock.json
+package-lock.json
