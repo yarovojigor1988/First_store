@@ -95,6 +95,18 @@
 }
 
 
+.red_circle{
+  background-color: red;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  border-radius: 50%;
+}
+
+
 .nav{
   flex-direction: row;
   display: flex;
@@ -244,4 +256,14 @@ input::-webkit-input-placeholder {
 input:-moz-placeholder {
 	color: #90a4ae;
 	letter-spacing: .1em;
+}
+
+.tabs {
+  
+  &_tab {
+
+    &:not(:first-child){
+      display: none;
+    }
+  }
 }

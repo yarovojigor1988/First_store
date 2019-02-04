@@ -4,6 +4,10 @@
         width: 100%;
         padding: 0 15px;
         display: flex;
+
+        &--fw {
+            max-width: 99999px;
+        }
     }
 
 
