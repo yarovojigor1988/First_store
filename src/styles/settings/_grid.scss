@@ -5,6 +5,7 @@
         padding: 0 15px;
         &--fw {
             max-width: 99999px;
+            width: 100%;
         }
     }
 
@@ -23,6 +24,7 @@
     &_row {
         margin: 0 -15px;
         display: flex;
+        flex-wrap: wrap;
     }
 
     &_col {
@@ -42,3 +44,5 @@
         }
     }
 }
+
+
