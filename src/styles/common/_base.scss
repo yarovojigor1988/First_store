@@ -509,10 +509,10 @@ input:-moz-placeholder {
   border-color: #fff;
   color: transparent;
   outline: none;
+}
 
-  &:hover {
-    background-color: $main-color;
-  }
+.slick-dots li.slick-active button{
+  background-color: $main-color;
 }
 
 .slick-prev.slick-arrow.slick-initialized.slick-slider {
