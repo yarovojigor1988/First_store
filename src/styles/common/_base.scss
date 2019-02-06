@@ -163,11 +163,11 @@
 }
 
 .round {
-
   width: 90px;
   height: 90px;
   background-color: #b5b5b5;
   border-radius: 50%;
+  margin-bottom: 28px;
 
   &:hover {
     background-color: #d4d4d4;
@@ -184,6 +184,7 @@
   color: #fff;
   text-decoration: none;
   font-weight: 400;
+  margin-bottom: 24px;
   
     &:hover {
       color: $main-color;
@@ -417,7 +418,6 @@ input:-moz-placeholder {
   }
 }
 
-
 .section_release{
   width: 100%;
   text-align: center;
@@ -434,4 +434,106 @@ input:-moz-placeholder {
   font-size: 36px;
   color: $dark-blue;
   font-weight: 700;
+  text-align: center;
+}
+
+.section_trending-product {
+  width: 100%;
+  text-align: center;
+  background-color: #f4f6f5;
+  padding: 124px 0 118px;
+  
+  >h2 {
+    margin-bottom: 60px;
+  }
+}
+
+.product_carousel {
+  padding: 0 15px;
+}
+
+.slick-dots {
+  list-style-type: none;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin-right: -4px;
+  vertical-align: top;
+  padding: 0 3px;
+}
+
+.slick-dots li button {
+  background-color: #e8e8e8;
+  border: 1px solid #fff;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  font-size: 0;
+  padding: 0;
+  margin-top: 44px;
+  border: none;
+  border-color: #fff;
+  color: transparent;
+  outline: none;
+
+  &:hover {
+    background-color: $main-color;
+  }
+}
+
+.slick-prev.slick-arrow.slick-initialized.slick-slider {
+  display: none;
+}
+
+.slick-next.slick-arrow.slick-initialized.slick-slider{
+  display: none;
+}
+
+.section_become {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  background-color: #f4f6f5;
+  padding: 110px 0 120px;
+}
+
+.flex_container-grey {
+  position: relative;
+  width: 1106px;
+  height: 438px;
+  background-color: #b5b5b5;
+}
+
+.flex_container-green {
+  display: flex;
+  justify-content: center;
+  width: 652px;
+  height: 214px;
+  background-color: #8bc34a;
+  position: absolute;
+  top: 107px;
+  left: 227px;
+}
+
+.info-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-left {
+  font-size: 30px;
+  color: $background-color;
+  text-align: left;
+  margin-right: 60px;
+}
+
+.btn_arrow {
+  width: 226px;
+  height: 64px;
+  background-color: #fff;
+  color: #263238;
+  border: 0;
 }
