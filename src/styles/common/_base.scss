@@ -278,12 +278,43 @@ input:-moz-placeholder {
       font-weight: 500;
     }
   }
+
+  &_wrap {
+    padding-bottom: 45px;
+  }
+  
   &_tab {
 
     &:not(:first-child){
       display: none;
     }
   }
+}
+
+.release {
+
+  &_items {
+    display: flex;
+    justify-content: center;
+  }
+
+  &_btn {
+
+    font-size: 16px;
+    line-height: 1;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    outline:none;
+    width: 163px;
+    height: 52px;
+    border-radius: none;
+    color: $dark-blue;
+    background-color: $white;
+    margin: 0 6px;
+    box-shadow: 1px 1px 3px rgba(204,216,222,0.75);
+  }
+
 }
 
 .active {
@@ -440,7 +471,7 @@ input:-moz-placeholder {
 .section_trending-product {
   width: 100%;
   text-align: center;
-  background-color: #f4f6f5;
+  background-color: $white;
   padding: 124px 0 118px;
   
   >h2 {
