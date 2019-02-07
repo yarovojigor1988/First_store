@@ -1,0 +1,39 @@
+.footer {
+    min-height: 650px;
+    background-color: $second-background-color;
+    color: #b7c3c8;
+
+    &_col {
+
+        &-title {
+            font-weight: bold;
+            font-size: 22px;
+            outline: none;
+            margin: 0;
+            background-color: transparent;
+            border: none;
+            padding: 25px 0;
+            position: relative;
+            color: $white;
+            text-transform: capitalize;
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                top: 100%;
+                height: 3px;
+                width: 50px;
+                background-color: $main-color;
+            }
+        }
+
+        &-main {
+            padding: 30px 0;
+            @media(max-width: 767px) {
+                display: none;
+            }
+        }
+    }
+}
