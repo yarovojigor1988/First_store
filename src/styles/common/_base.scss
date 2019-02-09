@@ -570,3 +570,34 @@ input:-moz-placeholder {
   color: #263238;
   border: 0;
 }
+
+.tutorials_text {
+	background-color: #f8f8f8;
+	text-align: center;
+	margin-bottom: 120px;
+
+	h4{
+	    font-size: 21px;
+		letter-spacing: 1px;
+		color: $dark-blue;
+		margin: 0;
+		padding: 40px 70px;
+	}
+}
+
+
+.image-tutorials { 
+	display: block;
+	max-width: 100%;
+	height: auto;
+	}
+
+
+.monthly_tutorials-header {
+	margin: 0;
+	font-size: 36px;
+	text-transform: capitalize;   
+	color: $dark-blue;
+	text-align: center;
+	padding: 125px 50px; 
+	}
