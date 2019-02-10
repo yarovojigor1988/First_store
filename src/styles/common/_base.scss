@@ -83,10 +83,6 @@
   height: 30px;
   border-radius: 3px;
   color: #fff;
-  margin-right: 3px;
-  margin-bottom: 3px;
-
-
 
   &_cart{
     border-radius: 50%;
@@ -98,10 +94,13 @@
 
   &_login{
     background-color: $main-color;
+    margin-right: 3px;
+    margin-bottom: 3px;
   }
 
   &_register{
     background-color: $second-main-color;
+    margin-right: 3px;
   }
 
   &_send-mail {
@@ -111,6 +110,7 @@
     width: 43px;
     height: 38px;
     font-size: 22px;
+    margin: 0;
   }
 
 }
