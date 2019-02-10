@@ -1,3 +1,8 @@
+$(document).on('click', '.mobile_nav_toggle', function(){
+    $(this).toggleClass('active');
+    $(this).next('.mobile_nav').slideToggle(400); 
+})
+
 $(document).on('click', '.tabs_nav-link', function(e){
     e.preventDefault();
     var tabId = $(this).attr('href');
@@ -47,3 +52,4 @@ $(document).on('click','.js_collapse', function(){
     $(this).next('.footer_col-main').slideToggle(400);
     $(this).parrents('.flex_col').siblings().find('.footer_col-main').slideUp(400);
 });
+
