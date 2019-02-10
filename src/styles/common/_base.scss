@@ -696,6 +696,14 @@ input:-moz-placeholder {
   }
   
   @media(max-width: 767px){
+    .footer {
+
+      min-height: auto;
+
+      &_inner {
+        padding: 30px 0;
+      }
+    }
 
     .btn {
       &_login {
