@@ -9,28 +9,39 @@ $(document).on('click', '.tabs_nav-link', function(e){
 
 
 $('.product_carousel').slick({
+    arrows: false,
     dots: true,
     infinite: true,
     autoplay: true,
-    skidesToshow: 4
+    slidesToShow: 4,
+   
+    responsive: [
+        {
+            breakpoint: 375,
+            settings: {
+                slidesToShow: 1,
+                arrows: false
+            }
+        }, 
 
-    // responsive: [
-    //     {
-    //         breakpoint: 375,
-    //         settings: {
-    //             slidesToshow: 1
-    //         }
-    //     }
-    // ]
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 2,
+                arrows: false
+            }
+        }
+    ]
 
 });
 
-$('.slick-next.slick-next').slick({
-    arrows:false
+
+$('.slick-next.slick-arrow').slick({
+    arrows: false
 });
 
 $('.slick-prev.slick-arrow').slick({
-    arrows:false
+    arrows: false
 });
 
 $(document).ready(function() {

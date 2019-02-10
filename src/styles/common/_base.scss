@@ -30,8 +30,6 @@
     flex-grow: 0;
     margin-right: 20px;
 
- 
-
     &:nth-of-type(1){
     flex-grow: 1;
     }
@@ -74,8 +72,6 @@
   border-radius: 3px;
   color: #fff;
 
-
-
   &_cart{
     border-radius: 50%;
     position: relative;
@@ -94,7 +90,6 @@
 
 }
 
-
 .red_circle{
   background-color: red;
   width: 18px;
@@ -107,7 +102,6 @@
   justify-content: center;
   align-items: center;
 }
-
 
 .nav{
   flex-direction: row;
@@ -192,6 +186,17 @@
       color: $main-color;
     }
   }
+
+  >p {
+  @media (max-width: 1023px) {
+      font-size: 14px;
+      margin-left: 20px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 }
 
 // input {
@@ -218,6 +223,7 @@ ul{
 h1 {
 	font-size: 48px;
 }
+
 .welcome{
   background-size: cover;
   min-width: 100vh;
@@ -254,8 +260,8 @@ h1 {
 input::-webkit-input-placeholder {
     color: #90a4ae;
     letter-spacing: .1em;
-
 }
+
 input:-moz-placeholder {
 	color: #90a4ae;
 	letter-spacing: .1em;
@@ -375,10 +381,11 @@ input:-moz-placeholder {
   }
 
   &_autor {
-
+    font-size: 14px;
     color: #546e7a;
     display: flex;
     align-items: center;
+    margin-right: 14px;
 
     &-icon {
       width: 30px;
@@ -408,6 +415,10 @@ input:-moz-placeholder {
       color: #ffa726;
       padding-right: 3px;
     }
+
+    &-views {
+      font-size: 12px;
+    }
   }
 
   &_label {
@@ -427,7 +438,6 @@ input:-moz-placeholder {
       border-width: 64px 64px 0 0;
       width: 0;
       height: 0;
-
     }
 
     &:after{
@@ -481,7 +491,7 @@ input:-moz-placeholder {
   }
 }
 
-.product_carousel {
+.slide_product {
   padding: 0 15px;
 }
 
@@ -540,6 +550,7 @@ input:-moz-placeholder {
 }
 
 .flex_container-green {
+  text-transform: capitalize;
   display: flex;
   justify-content: center;
   width: 652px;
@@ -564,6 +575,8 @@ input:-moz-placeholder {
 }
 
 .btn_arrow {
+  font-size: 18px;
+  text-transform: capitalize;
   width: 226px;
   height: 64px;
   background-color: #fff;
@@ -585,13 +598,11 @@ input:-moz-placeholder {
 	}
 }
 
-
 .image-tutorials { 
 	display: block;
 	max-width: 100%;
 	height: auto;
 	}
-
 
 .monthly_tutorials-header {
 	margin: 0;
@@ -600,4 +611,101 @@ input:-moz-placeholder {
 	color: $dark-blue;
 	text-align: center;
 	padding: 125px 50px; 
-	}
+  }
+  
+  @media (max-width: 1023px) {
+    .container-dark-grey h2 {
+      font-size: 32px;
+    }
+
+    .text-center h4 {
+      font-size: 18px;
+    }
+
+    .flex_container-grey {
+      width: 600px;
+      height: 300px;
+    }
+
+    .flex_container-green {
+      width: 300px;
+      height: 150px;
+      top: 75px;
+      left: 150px;
+    }
+
+    .text-left {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .btn_arrow {
+      font-size: 12px;
+      width: 116px;
+      height: 34px;
+    }
+  }
+
+
+  @media (max-width: 767px) {
+    .container-dark-grey {
+      height: 100%;
+    }
+
+    .container-dark-grey h2 {
+      font-size: 30px;
+    }
+
+    .flex_row-grey {
+        display: inline;
+        text-align: center;
+    }
+
+    .round {
+      margin-bottom: 5px;
+    }
+
+    .text-center h4 {
+      margin-bottom: 10px;
+    }
+
+    .product_card-heading {
+      font-size: 14px;
+    }
+
+    .product_autor {
+      font-size: 12px;
+    }
+
+    .product_autor-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      margin-left: -24px;
+    }
+
+    .section_trending-product {
+      padding: 60px 0 60px;
+    }
+
+    .section_become {
+      width: auto;
+    }
+
+    .info-text {
+      flex-direction: column;
+    }
+
+    .text-left {
+      font-size: 20px;
+      margin: 0;
+      text-align: center;
+    }
+
+    .btn_arrow {
+      width: 150px;
+      height: 50px;
+      margin-top: 20px;
+    }
+
+  }
