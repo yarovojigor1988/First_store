@@ -57,4 +57,11 @@
     }
 }
 
+.content {
+    width: 100%;
+    max-width: calc(100% -270px);
 
+    &:only-child {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,24 @@
+.sidebar {
+    width: 100%;
+    max-width: 270px;
+
+    &_block {
+        padding: 25px 20px;
+        border: 1px solid #dcdcdc;
+        background-color: $white;
+
+        &:not(:last-of-type) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &_title {
+        text-transform: capitalize;
+        font-weight: bold;
+        color: $dark-blue;
+        font-size: 20px;
+        line-height: 1;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #dcdcdc; 
+    }
+}
