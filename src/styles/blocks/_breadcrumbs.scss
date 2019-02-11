@@ -1,0 +1,28 @@
+.breadcrumbs {
+
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+
+    &_item {
+        text-transform: capitalize;
+        font-size: 15px;
+        color: $dark-blue;
+    }
+
+    &_link {
+        display: block;
+        text-decoration: none;
+        color: #bec9cf;
+        position: relative;
+        padding-right: 24px;
+
+        &::after {
+            content: '-';
+            color: $main-color;
+            position: absolute;
+            transform: translateY(-50%);
+            right: 10px;
+        }
+    }
+}

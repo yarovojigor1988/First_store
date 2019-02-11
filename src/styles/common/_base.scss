@@ -159,7 +159,12 @@
 
 .main {
 	flex-grow: 1;
-	width: 100%;
+  width: 100%;
+  
+  &_holder {
+    display: flex;
+  }
+
 }
 
 .container-dark-grey {
@@ -226,7 +231,7 @@
 // input {
 //   box-shadow: 1px 1px 10px rgba(139, 195, 74, .75);
 // }
-ul{
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
