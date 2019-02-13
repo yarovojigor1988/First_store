@@ -12,35 +12,7 @@ $(document).on('click', '.tabs_nav-link', function(e){
     $(tabId).siblings('.tabs_tab').hide(400);
 });
 
-if($('.product_carousel').length > 0) {
-    $('.product_carousel').slick({
-        arrows: false,
-        dots: true,
-        infinite: true,
-        autoplay: true,
-        slidesToShow: 4,
-        arrows: false,
-    
-        responsive: [
-            {
-                breakpoint: 375,
-                settings: {
-                    slidesToShow: 1,
-                    arrows: false
-                }
-            }, 
 
-            {
-                breakpoint: 767,
-                settings: {
-                    slidesToShow: 2,
-                    arrows: false
-                }
-            }
-        ]
-
-    });
-}
 
 
 if($('.js_collapse').length > 0) {
@@ -53,6 +25,37 @@ if($('.js_collapse').length > 0) {
 }
 
 $(document).ready(function() {
+
+    if($('.product_carousel').length > 0) {
+        $('.product_carousel').slick({
+            arrows: false,
+            dots: true,
+            infinite: true,
+            autoplay: true,
+            slidesToShow: 4,
+            arrows: false,
+        
+            responsive: [
+                {
+                    breakpoint: 375,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows: false
+                    }
+                }, 
+    
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 2,
+                        arrows: false
+                    }
+                }
+            ]
+    
+        });
+    }
+
     if($('.js_login-popup').length > 0) {
         $('.js_login-popup').magnificPopup({
             items: {
