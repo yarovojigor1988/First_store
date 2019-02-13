@@ -1,5 +1,5 @@
 .footer {
-    min-height: 650px;
+    min-height: 560px;
     background-color: $second-background-color;
     color: #b7c3c8;
 
@@ -16,6 +16,7 @@
             position: relative;
             color: $white;
             text-transform: capitalize;
+            text-align: left;
 
             &:after {
                 content: '';
@@ -34,6 +35,132 @@
             @media(max-width: 767px) {
                 display: none;
             }
+        }        
+
+        &-text {
+            font-size: 15px;
+            padding-bottom: 35px;
+            line-height: 1.6;
         }
     }
+
+    &_inner {
+        padding: 90px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    &_contact-information {
+        color: $white;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 2;
+        display: flex;
+        flex-direction: column;
+
+        &-text {
+            display: flex;
+            align-items: flex-start;
+
+            &:last-of-type{
+                align-items: center;
+            }
+        }
+    }
+
+    &_tel {
+        color: $white;
+    }
+
+    &_icon {
+        color: $main-color;
+        font-size: 18px;
+        padding-right: 20px;
+    }
+
+    &_social-block {
+        padding-bottom: 40px;
+        >ul {
+            display: flex;
+        }
+    }
+
+    &_sing_up-text {
+        font-size: 20px;
+        color: $white;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+
+
+    &_soc-icons {
+        margin-right: 7px;
+        font-size: 20px;
+        color: $white;
+        display: flex;
+        width: 28px;
+        height: 28px;
+        border-radius: 2px;
+        justify-content: center;
+        align-items: center;
+
+        &--facebook {
+            background-color: #3b5998;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding-right: 5px;
+            font-size: 22px;
+        }
+
+        &--twitter {
+            background-color: #55acee;
+        }
+        
+        &--youtube {
+            background-color: #e52d27;
+        }
+
+        &--pinterest {
+            color: #e52d27;
+            background-color: #fff;
+            font-size: 22px;
+
+        }
+
+        &--linkedin {
+            background-color: #1565c0;
+            border-radius: 0;
+        }
+    }
+
+    &_input-holder {
+        display: flex;
+        align-items: center;
+        padding: 2px;
+        background: linear-gradient(to bottom, #000, #263238);
+    }
+
+    &_form-input {
+        flex-grow: 2;
+        padding-left: 15px;
+        height: 38px;
+        background-color: #2f3c43;
+        border: solid 1px #2f3c43;
+        color: #697378;
+        width: 100%;
+
+        &::-webkit-input-placeholder {color:#697378;}
+        &::-moz-placeholder          {color:#697378;}
+        &:-moz-placeholder           {color:#697378;}
+        &:-ms-input-placeholder      {color:#697378;}
+
+    }
 }
+
+.copy {
+    border-top: solid 1px #424d53;
+    font-size: 15px;
+    color: #919699;
+    text-align: center;
+    padding: 30px 15px;
+  }

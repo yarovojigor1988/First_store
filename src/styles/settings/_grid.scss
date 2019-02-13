@@ -18,6 +18,8 @@
         align-items: center;
         display: flex;
         justify-content: center;
+        padding: 0 15px;
+        position: relative;
 
     }
 
@@ -53,6 +55,8 @@
             @media(max-width: 767px) {
                 width: 100%;
             }
+
+
         }
     }
 }
@@ -61,7 +65,18 @@
     width: 100%;
     max-width: calc(100% -270px);
 
+
     &:only-child {
         max-width: 100%;
     }
 }
+
+.content {
+    width: 100%;
+    max-width: calc(100% - 270px);
+
+    &:only-child {
+        width: 100%;
+    }
+}
+

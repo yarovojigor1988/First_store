@@ -1,4 +1,5 @@
 .sidebar {
+
     width: 100%;
     max-width: 270px;
 
@@ -13,6 +14,7 @@
     }
 
     &_title {
+
         text-transform: capitalize;
         font-weight: bold;
         color: $dark-blue;
@@ -20,5 +22,6 @@
         line-height: 1;
         padding-bottom: 20px;
         border-bottom: 1px solid #dcdcdc; 
+
     }
 }
