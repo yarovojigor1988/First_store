@@ -3,6 +3,11 @@ $(document).on('click', '.mobile_nav_toggle', function(){
     $(this).next('.mobile_nav').slideToggle(400); 
 })
 
+$(document).on('click', '.user_toggle', function(){
+    $(this).toggleClass('active');
+    $(this).next('.user_btns').slideToggle(400); 
+})
+
 $(document).on('click', '.tabs_nav-link', function(e){
     e.preventDefault();
     var tabId = $(this).attr('href');
@@ -37,7 +42,7 @@ $(document).ready(function() {
         
             responsive: [
                 {
-                    breakpoint: 375,
+                    breakpoint: 767,
                     settings: {
                         slidesToShow: 1,
                         arrows: false
@@ -45,9 +50,17 @@ $(document).ready(function() {
                 }, 
     
                 {
-                    breakpoint: 767,
+                    breakpoint: 1024,
                     settings: {
                         slidesToShow: 2,
+                        arrows: false
+                    }
+                },
+
+                {
+                    breakpoint: 1467,
+                    settings: {
+                        slidesToShow: 3,
                         arrows: false
                     }
                 }
