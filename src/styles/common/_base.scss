@@ -38,11 +38,6 @@
 
     }
 
-
-    @media(max-width: 767px) {
-      margin-right: 3px;
-    }
-
     &:nth-of-type(1){
     flex-grow: 1;
     }
@@ -800,6 +795,7 @@ input:-moz-placeholder {
   a {
     color: $main-color;
   }
+
   
 .tutorials_content{
   display: flex;
@@ -825,11 +821,11 @@ input:-moz-placeholder {
 
   }
 
+
     @media(max-width: 767px) {
        margin-bottom: 60px;
     }
       
-
 
 	h4{
 	  font-size: 21px;
@@ -853,10 +849,10 @@ input:-moz-placeholder {
 	height: auto;
 	}
 
+
 .content_center {
   justify-content: center;
 }
-
 
 .monthly_tutorials-header {
 	margin: 0;
@@ -955,6 +951,10 @@ input:-moz-placeholder {
 
     .fa-search {
       display: none;
+    }
+
+    .content_center {
+      justify-content: center;
     }
 
     h1 {
