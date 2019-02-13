@@ -7,6 +7,9 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <link rel="stylesheet" href="../styles/styles.min.css">
 </head>
 <body>
@@ -19,9 +22,13 @@
                             <img src="../images/logo.png" alt="Logo">
                         </div>
                     </div>
-                    <div class="header_content-col">
+                    <div class="header_content-col header_phone">
                         <div class="header_text"><span class="text_red">Need help?</span> Talk to an expert:</div>
                         <a class="header_text" href="tel:+61 3 8376 6284">+61 3 8376 6284</a>
+                    </div>
+                    <div class="header_content-col mobile_header_phone">
+                        <a href="tel:+61 3 8376 6284"><i class="fa fa-phone-square" aria-hidden="true"></i>
+                        </a>
                     </div>
                     <div class="header_content-col">
                         <button class="btn btn_cart" href="#">
@@ -30,14 +37,29 @@
                     </button>
                     </div>
                     <div class="header_content-col">
-                        <button class="btn btn_login">Login</button>
+                        <button class="js_login-popup btn btn_login">Login</button>
                         <button class="btn btn_register">Register</button>
-                    </div>  
+                    </div>
+                    <buttom class="mobile_nav_toggle"><span></span></buttom>
+                    <nav class="mobile_nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">WordPress</a></li>
+                            <li><a href="#">Joomla</a></li>
+                            <li><a href="#">PSD</a></li>
+                            <li><a href="#">Plugins</a></li>
+                            <li><a href="#">Components</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
         <div class="flex_container-dark-blue">
-            <div class="flex_container">
+            <div class="header_wrap">
                 <nav class="nav">
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -58,10 +80,11 @@
             <div class="welcome_text">
                 <h1>Welcome To Foxtar Market Place!</h1>
                 <p> Premium WordPress Themes, Web Templates and Many More...</p>
+
             </div>
             <div class="form_input-holder">
-                <input type="text" placeholder="Search Your Keywords..." class="form_input">
-                <i class=" fa fa-search"></i>
+                   <span class="icon-search"><i class=" fa fa-search"></i></span>
+                    <input type="text" placeholder="Search Your Keywords..." class="form_input">   
             </div>
         </div>
         <section class="section_release">
@@ -83,21 +106,21 @@
                                     <div class="flex_col-holder">
                                         <div class="product_card">
                                             <div class="product_label product_label--hit"></div>
-                                            <a href="" class="product_card-img">
-                                                <img src="https://via.placeholder.com/440x250/d4d4d4/d4d4d4" alt="image desckr">
+                                            <a href="">
+                                                <img class="product_card-img" src="https://via.placeholder.com/450x250/d4d4d4/d4d4d4" alt="image desckr">
                                             </a>
-                                            <div class="product_cart-main">
-                                                <div class="procuct_card-info">
+                                            <div class="product_card-main">
+                                                <div class="product_card-info">
                                                     <div class="product_card-title">
-                                                        <a href="" class="pruduct_card-heading"></a>
-                                                        <div class="product_card-type"></div>
+                                                        <a href="" class="product_card-heading">Responsive Mobile APP</a>
+                                                        <div class="product_card-type">Site Template</div>
                                                     </div>
                                                     <div class="product_card-price">$15</div>
                                                 </div>
                                                 <div class="product_card-footer">
                                                     <a href="" class="product_autor">
                                                         <div class="product_autor-icon"></div>
-                                                        <div class="product_autor-name"></div>
+                                                        <div class="product_autor-name">Radiustheme</div>
                                                     </a>
                                                     <div class="product_rating">
                                                         <ul class="product_rating-stars">
@@ -107,13 +130,259 @@
                                                             <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
                                                             <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
                                                         </ul>
-                                                        <span class="product_rating-views">(5)</span>
+                                                        <span class="product_rating-views">(05)</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="flex_col--1-4">
+                                    <div class="flex_col-holder">
+                                        <div class="product_card">
+                                            <div class="product_label product_label--hit"></div>
+                                            <a href="">
+                                                <img class="product_card-img" src="https://via.placeholder.com/450x250/d4d4d4/d4d4d4" alt="image desckr">
+                                            </a>
+                                            <div class="product_card-main">
+                                                <div class="product_card-info">
+                                                    <div class="product_card-title">
+                                                        <a href="" class="product_card-heading">Responsive Mobile APP</a>
+                                                        <div class="product_card-type">Site Template</div>
+                                                    </div>
+                                                    <div class="product_card-price">$15</div>
+                                                </div>
+                                                <div class="product_card-footer">
+                                                    <a href="" class="product_autor">
+                                                        <div class="product_autor-icon"></div>
+                                                        <div class="product_autor-name">Radiustheme</div>
+                                                    </a>
+                                                    <div class="product_rating">
+                                                        <ul class="product_rating-stars">
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        </ul>
+                                                        <span class="product_rating-views">(05)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex_col--1-4">
+                                    <div class="flex_col-holder">
+                                        <div class="product_card">
+                                            <div class="product_label product_label--hit"></div>
+                                            <a href="">
+                                                <img class="product_card-img" src="https://via.placeholder.com/450x250/d4d4d4/d4d4d4" alt="image desckr">
+                                            </a>
+                                            <div class="product_card-main">
+                                                <div class="product_card-info">
+                                                    <div class="product_card-title">
+                                                        <a href="" class="product_card-heading">Responsive Mobile APP</a>
+                                                        <div class="product_card-type">Site Template</div>
+                                                    </div>
+                                                    <div class="product_card-price">$15</div>
+                                                </div>
+                                                <div class="product_card-footer">
+                                                    <a href="" class="product_autor">
+                                                        <div class="product_autor-icon"></div>
+                                                        <div class="product_autor-name">Radiustheme</div>
+                                                    </a>
+                                                    <div class="product_rating">
+                                                        <ul class="product_rating-stars">
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        </ul>
+                                                        <span class="product_rating-views">(05)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex_col--1-4">
+                                    <div class="flex_col-holder">
+                                        <div class="product_card">
+                                            <div class="product_label product_label--hit"></div>
+                                            <a href="">
+                                                <img class="product_card-img" src="https://via.placeholder.com/450x250/d4d4d4/d4d4d4" alt="image desckr">
+                                            </a>
+                                            <div class="product_card-main">
+                                                <div class="product_card-info">
+                                                    <div class="product_card-title">
+                                                        <a href="" class="product_card-heading">Responsive Mobile APP</a>
+                                                        <div class="product_card-type">Site Template</div>
+                                                    </div>
+                                                    <div class="product_card-price">$15</div>
+                                                </div>
+                                                <div class="product_card-footer">
+                                                    <a href="" class="product_autor">
+                                                        <div class="product_autor-icon"></div>
+                                                        <div class="product_autor-name">Radiustheme</div>
+                                                    </a>
+                                                    <div class="product_rating">
+                                                        <ul class="product_rating-stars">
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        </ul>
+                                                        <span class="product_rating-views">(05)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex_col--1-4">
+                                    <div class="flex_col-holder">
+                                        <div class="product_card">
+                                            <div class="product_label product_label--hit"></div>
+                                            <a href="">
+                                                <img class="product_card-img" src="https://via.placeholder.com/450x250/d4d4d4/d4d4d4" alt="image desckr">
+                                            </a>
+                                            <div class="product_card-main">
+                                                <div class="product_card-info">
+                                                    <div class="product_card-title">
+                                                        <a href="" class="product_card-heading">Responsive Mobile APP</a>
+                                                        <div class="product_card-type">Site Template</div>
+                                                    </div>
+                                                    <div class="product_card-price">$15</div>
+                                                </div>
+                                                <div class="product_card-footer">
+                                                    <a href="" class="product_autor">
+                                                        <div class="product_autor-icon"></div>
+                                                        <div class="product_autor-name">Radiustheme</div>
+                                                    </a>
+                                                    <div class="product_rating">
+                                                        <ul class="product_rating-stars">
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        </ul>
+                                                        <span class="product_rating-views">(05)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex_col--1-4">
+                                    <div class="flex_col-holder">
+                                        <div class="product_card">
+                                            <div class="product_label product_label--hit"></div>
+                                            <a href="">
+                                                <img class="product_card-img" src="https://via.placeholder.com/450x250/d4d4d4/d4d4d4" alt="image desckr">
+                                            </a>
+                                            <div class="product_card-main">
+                                                <div class="product_card-info">
+                                                    <div class="product_card-title">
+                                                        <a href="" class="product_card-heading">Responsive Mobile APP</a>
+                                                        <div class="product_card-type">Site Template</div>
+                                                    </div>
+                                                    <div class="product_card-price">$15</div>
+                                                </div>
+                                                <div class="product_card-footer">
+                                                    <a href="" class="product_autor">
+                                                        <div class="product_autor-icon"></div>
+                                                        <div class="product_autor-name">Radiustheme</div>
+                                                    </a>
+                                                    <div class="product_rating">
+                                                        <ul class="product_rating-stars">
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        </ul>
+                                                        <span class="product_rating-views">(05)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex_col--1-4">
+                                    <div class="flex_col-holder">
+                                        <div class="product_card">
+                                            <div class="product_label product_label--hit"></div>
+                                            <a href="">
+                                                <img class="product_card-img" src="https://via.placeholder.com/450x250/d4d4d4/d4d4d4" alt="image desckr">
+                                            </a>
+                                            <div class="product_card-main">
+                                                <div class="product_card-info">
+                                                    <div class="product_card-title">
+                                                        <a href="" class="product_card-heading">Responsive Mobile APP</a>
+                                                        <div class="product_card-type">Site Template</div>
+                                                    </div>
+                                                    <div class="product_card-price">$15</div>
+                                                </div>
+                                                <div class="product_card-footer">
+                                                    <a href="" class="product_autor">
+                                                        <div class="product_autor-icon"></div>
+                                                        <div class="product_autor-name">Radiustheme</div>
+                                                    </a>
+                                                    <div class="product_rating">
+                                                        <ul class="product_rating-stars">
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        </ul>
+                                                        <span class="product_rating-views">(05)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex_col--1-4">
+                                    <div class="flex_col-holder">
+                                        <div class="product_card">
+                                            <div class="product_label product_label--hit"></div>
+                                            <a href="">
+                                                <img class="product_card-img" src="https://via.placeholder.com/450x250/d4d4d4/d4d4d4" alt="image desckr">
+                                            </a>
+                                            <div class="product_card-main">
+                                                <div class="product_card-info">
+                                                    <div class="product_card-title">
+                                                        <a href="" class="product_card-heading">Responsive Mobile APP</a>
+                                                        <div class="product_card-type">Site Template</div>
+                                                    </div>
+                                                    <div class="product_card-price">$15</div>
+                                                </div>
+                                                <div class="product_card-footer">
+                                                    <a href="" class="product_autor">
+                                                        <div class="product_autor-icon"></div>
+                                                        <div class="product_autor-name">Radiustheme</div>
+                                                    </a>
+                                                    <div class="product_rating">
+                                                        <ul class="product_rating-stars">
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        </ul>
+                                                        <span class="product_rating-views">(05)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                         <div class="tabs_tab" id="tab-2"></div>
@@ -123,7 +392,591 @@
                         <div class="tabs_tab" id="tab-6"></div>
                     </div>
                 </div>
+                <div class="release_items">
+                    <button class="release_btn">All New Items</button>
+                    <button class="release_btn">Popular Items</button>
+                </div>
             </div>
+        </section>
+        <section class="section_trending-product">
+            <h2>This Week Trending Products</h2>                        
+            <div class="product_carousel">
+                <div class=carousel_slide>
+                    <div class="flex_row">
+                        <div class="flex_col--1-4">
+                            <div class="flex_col-holder">
+                                <div class="product_card">
+                                    <div class="product_label product_label--hit"></div>
+                                    <a href="">
+                                        <img class="product_card-img" src="https://via.placeholder.com/450x250/d4d4d4/d4d4d4" alt="image desckr">
+                                    </a>
+                                    <div class="product_card-main">
+                                        <div class="product_card-info">
+                                            <div class="product_card-title">
+                                                <a href="" class="product_card-heading">Responsive Template</a>
+                                                <div class="product_card-type">Site Template</div>
+                                            </div>
+                                            <div class="product_card-price">$19</div>
+                                        </div>
+                                        <div class="product_card-footer">
+                                            <a href="" class="product_autor">
+                                                <div class="product_autor-icon"></div>
+                                                <div class="product_autor-name">Radiustheme</div>
+                                            </a>
+                                            <div class="product_rating">
+                                                <ul class="product_rating-stars">
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                </ul>
+                                                <span class="product_rating-views">(05)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex_col--1-4">
+                            <div class="flex_col-holder">
+                                <div class="product_card">
+                                    <div class="product_label product_label--hit"></div>
+                                    <a href="">
+                                        <img class="product_card-img" src="https://via.placeholder.com/450x250/d4d4d4/d4d4d4" alt="image desckr">
+                                    </a>
+                                    <div class="product_card-main">
+                                        <div class="product_card-info">
+                                            <div class="product_card-title">
+                                                <a href="" class="product_card-heading">The Post Grid Pro</a>
+                                                <div class="product_card-type">WordPress Plugin</div>
+                                            </div>
+                                            <div class="product_card-price">$15</div>
+                                        </div>
+                                        <div class="product_card-footer">
+                                            <a href="" class="product_autor">
+                                                <div class="product_autor-icon"></div>
+                                                <div class="product_autor-name">PsdBosS</div>
+                                            </a>
+                                            <div class="product_rating">
+                                                <ul class="product_rating-stars">
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                </ul>
+                                                <span class="product_rating-views">(05)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex_col--1-4">
+                            <div class="flex_col-holder">
+                                <div class="product_card">
+                                    <div class="product_label product_label--hit"></div>
+                                    <a href="">
+                                        <img class="product_card-img" src="https://via.placeholder.com/450x250/d4d4d4/d4d4d4" alt="image desckr">
+                                    </a>
+                                    <div class="product_card-main">
+                                        <div class="product_card-info">
+                                            <div class="product_card-title">
+                                                <a href="" class="product_card-heading">Logo Showcase</a>
+                                                <div class="product_card-type">Joomla Component</div>
+                                            </div>
+                                            <div class="product_card-price">$20</div>
+                                        </div>
+                                        <div class="product_card-footer">
+                                            <a href="" class="product_autor">
+                                                <div class="product_autor-icon"></div>
+                                                <div class="product_autor-name">Manilip</div>
+                                            </a>
+                                            <div class="product_rating">
+                                                <ul class="product_rating-stars">
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                </ul>
+                                                <span class="product_rating-views">(05)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex_col--1-4">
+                            <div class="flex_col-holder">
+                                <div class="product_card">
+                                    <div class="product_label product_label--hit"></div>
+                                    <a href="">
+                                        <img class="product_card-img" src="https://via.placeholder.com/450x250/d4d4d4/d4d4d4" alt="image desckr">
+                                    </a>
+                                    <div class="product_card-main">
+                                        <div class="product_card-info">
+                                            <div class="product_card-title">
+                                                <a href="" class="product_card-heading">UI Design</a>
+                                                <div class="product_card-type">PSD Template</div>
+                                            </div>
+                                            <div class="product_card-price">$12</div>
+                                        </div>
+                                        <div class="product_card-footer">
+                                            <a href="" class="product_autor">
+                                                <div class="product_autor-icon"></div>
+                                                <div class="product_autor-name">Lolypop</div>
+                                            </a>
+                                            <div class="product_rating">
+                                                <ul class="product_rating-stars">
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                </ul>
+                                                <span class="product_rating-views">(05)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel_slide">
+                    <div class="flex_row">
+                        <div class="flex_col--1-4">
+                            <div class="flex_col-holder">
+                                <div class="product_card">
+                                    <div class="product_label product_label--hit"></div>
+                                    <a href="">
+                                        <img class="product_card-img" src="https://via.placeholder.com/450x250/d4d4d4/d4d4d4" alt="image desckr">
+                                    </a>
+                                    <div class="product_card-main">
+                                        <div class="product_card-info">
+                                            <div class="product_card-title">
+                                                <a href="" class="product_card-heading">Responsive Template</a>
+                                                <div class="product_card-type">Site Template</div>
+                                            </div>
+                                            <div class="product_card-price">$19</div>
+                                        </div>
+                                        <div class="product_card-footer">
+                                            <a href="" class="product_autor">
+                                                <div class="product_autor-icon"></div>
+                                                <div class="product_autor-name">Radiustheme</div>
+                                            </a>
+                                            <div class="product_rating">
+                                                <ul class="product_rating-stars">
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                </ul>
+                                                <span class="product_rating-views">(05)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex_col--1-4">
+                            <div class="flex_col-holder">
+                                <div class="product_card">
+                                    <div class="product_label product_label--hit"></div>
+                                    <a href="">
+                                <img class="product_card-img" src="https://via.placeholder.com/450x250/d4d4d4/d4d4d4" alt="image desckr">
+                                    </a>
+                                    <div class="product_card-main">
+                                        <div class="product_card-info">
+                                            <div class="product_card-title">
+                                                <a href="" class="product_card-heading">The Post Grid Pro</a>
+                                                <div class="product_card-type">WordPress Plugin</div>
+                                            </div>
+                                            <div class="product_card-price">$15</div>
+                                        </div>
+                                        <div class="product_card-footer">
+                                            <a href="" class="product_autor">
+                                                <div class="product_autor-icon"></div>
+                                                <div class="product_autor-name">PsdBosS</div>
+                                            </a>
+                                            <div class="product_rating">
+                                                <ul class="product_rating-stars">
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                </ul>
+                                                <span class="product_rating-views">(05)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex_col--1-4">
+                                    <div class="flex_col-holder">
+                                        <div class="product_card">
+                                            <div class="product_label product_label--hit"></div>
+                                            <a href="">
+                                                <img class="product_card-img" src="https://via.placeholder.com/450x250/d4d4d4/d4d4d4" alt="image desckr">
+                                            </a>
+                                            <div class="product_card-main">
+                                                <div class="product_card-info">
+                                                    <div class="product_card-title">
+                                                        <a href="" class="product_card-heading">Logo Showcase</a>
+                                                        <div class="product_card-type">Joomla Component</div>
+                                                    </div>
+                                                    <div class="product_card-price">$20</div>
+                                                </div>
+                                                <div class="product_card-footer">
+                                                    <a href="" class="product_autor">
+                                                        <div class="product_autor-icon"></div>
+                                                        <div class="product_autor-name">Manilip</div>
+                                                    </a>
+                                                    <div class="product_rating">
+                                                        <ul class="product_rating-stars">
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        </ul>
+                                                        <span class="product_rating-views">(05)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="flex_col--1-4">
+                                    <div class="flex_col-holder">
+                                        <div class="product_card">
+                                            <div class="product_label product_label--hit"></div>
+                                            <a href="">
+                                                <img class="product_card-img" src="https://via.placeholder.com/450x250/d4d4d4/d4d4d4" alt="image desckr">
+                                            </a>
+                                            <div class="product_card-main">
+                                                <div class="product_card-info">
+                                                    <div class="product_card-title">
+                                                        <a href="" class="product_card-heading">UI Design</a>
+                                                        <div class="product_card-type">PSD Template</div>
+                                                    </div>
+                                                    <div class="product_card-price">$12</div>
+                                                </div>
+                                                <div class="product_card-footer">
+                                                    <a href="" class="product_autor">
+                                                        <div class="product_autor-icon"></div>
+                                                        <div class="product_autor-name">Lolypop</div>
+                                                    </a>
+                                                    <div class="product_rating">
+                                                        <ul class="product_rating-stars">
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        </ul>
+                                                        <span class="product_rating-views">(05)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel_slide">
+                    <div class="flex_row">
+                        <div class="flex_col--1-4">
+                            <div class="flex_col-holder">
+                                <div class="product_card">
+                                    <div class="product_label product_label--hit"></div>
+                                    <a href="">
+                                        <img class="product_card-img" src="https://via.placeholder.com/450x250/d4d4d4/d4d4d4" alt="image desckr">
+                                    </a>
+                                    <div class="product_card-main">
+                                        <div class="product_card-info">
+                                            <div class="product_card-title">
+                                                <a href="" class="product_card-heading">Responsive Template</a>
+                                                <div class="product_card-type">Site Template</div>
+                                            </div>
+                                            <div class="product_card-price">$19</div>
+                                        </div>
+                                        <div class="product_card-footer">
+                                            <a href="" class="product_autor">
+                                        <div class="product_autor-icon"></div>
+                                        <div class="product_autor-name">Radiustheme</div>
+                                            </a>
+                                            <div class="product_rating">
+                                                <ul class="product_rating-stars">
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                </ul>
+                                                <span class="product_rating-views">(05)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex_col--1-4">
+                                    <div class="flex_col-holder">
+                                        <div class="product_card">
+                                            <div class="product_label product_label--hit"></div>
+                                            <a href="">
+                                        <img class="product_card-img" src="https://via.placeholder.com/450x250/d4d4d4/d4d4d4" alt="image desckr">
+                                            </a>
+                                            <div class="product_card-main">
+                                                <div class="product_card-info">
+                                                    <div class="product_card-title">
+                                                        <a href="" class="product_card-heading">The Post Grid Pro</a>
+                                                        <div class="product_card-type">WordPress Plugin</div>
+                                                    </div>
+                                                    <div class="product_card-price">$15</div>
+                                                </div>
+                                                <div class="product_card-footer">
+                                                    <a href="" class="product_autor">
+                                                        <div class="product_autor-icon"></div>
+                                                        <div class="product_autor-name">PsdBosS</div>
+                                                    </a>
+                                                    <div class="product_rating">
+                                                        <ul class="product_rating-stars">
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                        </ul>
+                                                        <span class="product_rating-views">(05)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="flex_col--1-4">
+                                            <div class="flex_col-holder">
+                                                <div class="product_card">
+                                                    <div class="product_label product_label--hit"></div>
+                                                    <a href="">
+                                                        <img class="product_card-img" src="https://via.placeholder.com/450x250/d4d4d4/d4d4d4" alt="image desckr">
+                                                    </a>
+                                                    <div class="product_card-main">
+                                                        <div class="product_card-info">
+                                                            <div class="product_card-title">
+                                                                <a href="" class="product_card-heading">Logo Showcase</a>
+                                                                <div class="product_card-type">Joomla Component</div>
+                                                            </div>
+                                                            <div class="product_card-price">$20</div>
+                                                        </div>
+                                                        <div class="product_card-footer">
+                                                            <a href="" class="product_autor">
+                                                                <div class="product_autor-icon"></div>
+                                                                <div class="product_autor-name">Manilip</div>
+                                                            </a>
+                                                            <div class="product_rating">
+                                                                <ul class="product_rating-stars">
+                                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                </ul>
+                                                                <span class="product_rating-views">(05)</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        </div>
+                        <div class="flex_col--1-4">
+                                       <div class="flex_col-holder">
+                                                <div class="product_card">
+                                                    <div class="product_label product_label--hit"></div>
+                                                    <a href="">
+                                                        <img class="product_card-img" src="https://via.placeholder.com/450x250/d4d4d4/d4d4d4" alt="image desckr">
+                                                    </a>
+                                                    <div class="product_card-main">
+                                                        <div class="product_card-info">
+                                                            <div class="product_card-title">
+                                                                <a href="" class="product_card-heading">UI Design</a>
+                                                                <div class="product_card-type">PSD Template</div>
+                                                            </div>
+                                                            <div class="product_card-price">$12</div>
+                                                        </div>
+                                                        <div class="product_card-footer">
+                                                            <a href="" class="product_autor">
+                                                                <div class="product_autor-icon"></div>
+                                                                <div class="product_autor-name">Lolypop</div>
+                                                            </a>
+                                                            <div class="product_rating">
+                                                                <ul class="product_rating-stars">
+                                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                </ul>
+                                                                <span class="product_rating-views">(05)</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel_slide">
+                    <div class="flex_row">
+                        <div class="flex_col--1-4">
+                            <div class="flex_col-holder">
+                                <div class="product_card">
+                                    <div class="product_label product_label--hit"></div>
+                                    <a href="">
+                                        <img class="product_card-img" src="https://via.placeholder.com/450x250/d4d4d4/d4d4d4" alt="image desckr">
+                                    </a>
+                                    <v class="product_card-main">
+                                        <div class="product_card-info">
+                                            <div class="product_card-title">
+                                                <a href="" class="product_card-heading">Responsive Template</a>
+                                                <div class="product_card-type">Site Template</div>
+                                            </div>
+                                            <div class="product_card-price">$19</div>
+                                        </div>
+                                        <div class="product_card-footer">
+                                            <a href="" class="product_autor">
+                                                <div class="product_autor-icon"></div>
+                                                <div class="product_autor-name">Radiustheme</div>
+                                            </a>
+                                            <div class="product_rating">
+                                                <ul class="product_rating-stars">
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                </ul>
+                                                <span class="product_rating-views">(05)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="flex_col--1-4">
+                                            <div class="flex_col-holder">
+                                                <div class="product_card">
+                                                    <div class="product_label product_label--hit"></div>
+                                                    <a href="">
+                                                <img class="product_card-img" src="https://via.placeholder.com/450x250/d4d4d4/d4d4d4" alt="image desckr">
+                                                    </a>
+                                                    <div class="product_card-main">
+                                                        <div class="product_card-info">
+                                                            <div class="product_card-title">
+                                                                <a href="" class="product_card-heading">The Post Grid Pro</a>
+                                                                <div class="product_card-type">WordPress Plugin</div>
+                                                            </div>
+                                                            <div class="product_card-price">$15</div>
+                                                        </div>
+                                                        <div class="product_card-footer">
+                                                            <a href="" class="product_autor">
+                                                                <div class="product_autor-icon"></div>
+                                                                <div class="product_autor-name">PsdBosS</div>
+                                                            </a>
+                                                            <div class="product_rating">
+                                                                <ul class="product_rating-stars">
+                                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                    <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                </ul>
+                                                                <span class="product_rating-views">(05)</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        </div>
+                        <div class="flex_col--1-4">
+                                                    <div class="flex_col-holder">
+                                                        <div class="product_card">
+                                                            <div class="product_label product_label--hit"></div>
+                                                            <a href="">
+                                                                <img class="product_card-img" src="https://via.placeholder.com/450x250/d4d4d4/d4d4d4" alt="image desckr">
+                                                            </a>
+                                                            <div class="product_card-main">
+                                                                <div class="product_card-info">
+                                                                    <div class="product_card-title">
+                                                                        <a href="" class="product_card-heading">Logo Showcase</a>
+                                                                        <div class="product_card-type">Joomla Component</div>
+                                                                    </div>
+                                                                    <div class="product_card-price">$20</div>
+                                                                </div>
+                                                                <div class="product_card-footer">
+                                                                    <a href="" class="product_autor">
+                                                                        <div class="product_autor-icon"></div>
+                                                                        <div class="product_autor-name">Manilip</div>
+                                                                    </a>
+                                                                    <div class="product_rating">
+                                                                        <ul class="product_rating-stars">
+                                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                        </ul>
+                                                                        <span class="product_rating-views">(05)</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                        </div>
+                        <div class="flex_col--1-4">
+                                                    <div class="flex_col-holder">
+                                                        <div class="product_card">
+                                                            <div class="product_label product_label--hit"></div>
+                                                            <a href="">
+                                                                <img class="product_card-img" src="https://via.placeholder.com/450x250/d4d4d4/d4d4d4" alt="image desckr">
+                                                            </a>
+                                                            <div class="product_card-main">
+                                                                <div class="product_card-info">
+                                                                    <div class="product_card-title">
+                                                                        <a href="" class="product_card-heading">UI Design</a>
+                                                                        <div class="product_card-type">PSD Template</div>
+                                                                    </div>
+                                                                    <div class="product_card-price">$12</div>
+                                                                </div>
+                                                                <div class="product_card-footer">
+                                                                    <a href="" class="product_autor">
+                                                                        <div class="product_autor-icon"></div>
+                                                                        <div class="product_autor-name">Lolypop</div>
+                                                                    </a>
+                                                                    <div class="product_rating">
+                                                                        <ul class="product_rating-stars">
+                                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                            <li class="product_rating-star"><i class="fa fa-star" aria-hidden="true"></i></li>
+                                                                        </ul>
+                                                                        <span class="product_rating-views">(05)</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>              
         </section>
         <div class="container-dark-grey">
             <h2>Why you choose foxtar market place?</h2>
@@ -159,9 +1012,142 @@
                 </div>
             </div>
         </div>   
+        <section class="section_become">
+            <div class="flex_container-grey">
+                <div class="flex_container-green">
+                    <div class="info-text">
+                        <span class="text-left">Over 20,000 Author <br>Are Involved Here!</span>
+                        <button class="btn_arrow">Become A Author</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="flex_container">
+            <h2 class="monthly_tutorials-header">Free monthly tutorials to help you with your project</h2>
+            <div class="flex_row">
+              <div class="tutorials_content">
+                    <div class="flex_col flex_col--1-3">
+                        <a href="home.html">
+                            <div>
+                                <img class="image-tutorials" src="../images/image-tutorials.jpg" alt="image">
+                            </div>
+                            <div class="tutorials_text">
+                                <h4>Web Design Tutorials</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flex_col flex_col--1-3">
+                        <a href="home.html">
+                            <div>
+                               <img class="image-tutorials"  src="../images/image-tutorials.jpg" alt="image">
+                            </div>
+                            <div class="tutorials_text">
+                                <h4>WordPress Tutorials</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flex_col flex_col--1-3">
+                        <a href="home.html">
+                            <div>
+                                <img class="image-tutorials"  src="../images/image-tutorials.jpg" >
+                            </div>
+                            <div class="tutorials_text">
+                                <h4>HTML & CSS Tutorials</h4>
+                            </div>
+                        </a>
+                    </div>
+               </div>
+            </div>
+        </div>  
+        <footer class="footer">
+            <div class="footer_inner">
+                <div class="flex_container">
+                    <div class="flex_row">
+                        <div class="flex_col flex_col--1-4">
+                            <div class="flex_col-content">
+                                <button class="footer_col-title js_collapse">about company</button>
+                                <div class="footer_col-main">
+                                    <div class="footer_col-text">Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce sit amet urna iat.Praesent vel rutrum purus.</div>
+                                    <div class="footer_contact-information">
+                                        <div class="footer_contact-information-text">
+                                            <div class="footer_icon">
+                                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="footer_adress">PO Box 16122 Collins Street West Victoria 8007 Australia</div>
+                                        </div>
+                                        <div class="footer_contact-information-text">
+                                            <div class="footer_icon">
+                                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                            </div>
+                                            <a href="tel:+61 3 8376 6284" class="footer_tel">+61 3 8376 6284</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex_col flex_col--1-4">
+                            <div class="flex_col-content">
+                                <button class="footer_col-title js_collapse">join our community</button>
+                                <div class="footer_col-main marked_list">
+                                    <ul>
+                                        <li><a href="">home</a></li>
+                                        <li><a href="">forums</a></li>
+                                        <li><a href="">become an autor</a></li>
+                                        <li><a href="">community meetups</a></li>
+                                        <li><a href="">become an affiliate</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex_col flex_col--1-4">
+                                <div class="flex_col-content">
+                                    <button class="footer_col-title js_collapse">need help?</button>
+                                    <div class="footer_col-main marked_list">
+                                        <ul>
+                                            <li><a href="">help center</a></li>
+                                            <li><a href="">foxtar market terms</a></li>
+                                            <li><a href="">author terms</a></li>
+                                            <li><a href="">foxtar licenses</a></li>
+                                            <li><a href="">contact us</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="flex_col flex_col--1-4">
+                            <div class="flex_col-content">
+                                <button class="footer_col-title js_collapse">follow us on</button>
+                                <div class="footer_col-main">
+                                    <div class="footer_social-block">
+                                        <ul>
+                                            <li><a class="footer_soc-icons footer_soc-icons--facebook" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                            <li><a class="footer_soc-icons footer_soc-icons--twitter" href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                            <li><a class="footer_soc-icons footer_soc-icons--youtube" href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                                            <li><a class="footer_soc-icons footer_soc-icons--pinterest" href=""><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                                            <li><a class="footer_soc-icons footer_soc-icons--linkedin" href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer_sing_up">
+                                        <div class="footer_sing_up-text">newsletter sign up!</div>
+                                        <div class="footer_input-holder">
+                                            <input type="email" placeholder="E-mail Adress" class="footer_form-input">
+                                            <button class="btn btn_send-mail"><i class="fa fa-location-arrow" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">
+                <div class="copy_text">© 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.</div>
+            </div>
+        </footer>
     </div>
+    <div id="popup" class="popup mfp-hide">345345</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="../js/app.min.js"></script>
 </body>
 </html>
-

@@ -136,7 +136,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 618px;
+  min-height: 618px;
   font-family: $f-family-base;
   background-color: $second-background-color;
 }
@@ -191,13 +191,17 @@
   }
 }
 
-// input {
-//   box-shadow: 1px 1px 10px rgba(139, 195, 74, .75);
-// }
 ul{
   margin: 0;
   padding: 0;
   list-style: none;
+}
+/* Styles for banner "Welcome"*/
+
+.welcome{
+  background-size: cover;
+  min-width: 100vh;
+  width: 100%;
 }
 
 .welcome_text {
@@ -214,40 +218,40 @@ ul{
 
 h1 {
 	font-size: 48px;
-}
-.welcome{
-  background-size: cover;
-  min-width: 100vh;
-  width: 100%;
+  text-transform: capitalize;  
 }
 
 .form_input-holder{
+    max-width: 670px;
     margin: 0 auto;
     text-align: center;
+    position: relative;
+
+       .form_input{
+       width: 670px;
+       margin-bottom: 170px;
+       padding: 25px;
+       outline: none;
+       font-size: $f-size-base;
+       border-radius: 4px;
+       border: 1px solid #e5e5e5;
+
+         &:focus{
+         box-shadow: 1px 1px 10px rgba(139, 195, 74, .75);
+         }
+
+       }
 }
 
-.form_input{
-	  width: 670px;
-	  margin-bottom: 170px;
-    padding: 25px;
-    outline: none;
-    font-size: $f-size-base;
-    border-radius: 4px;
-    border: 1px solid #e5e5e5;
-}
-
-.form_input:focus{
-	box-shadow: 1px 1px 10px rgba(139, 195, 74, .75);
-}
-
-.form_input-holder i{
-	position: relative;
-    z-index: 1;
-    left: -45px;
-    top: 5px;
+.icon-search{
+    position: absolute;
+    z-index: 2;
     font-size: 25px;
     color: #90a4ae;
-}
+    top: 20px;
+    right: 4%;
+  }
+
 input::-webkit-input-placeholder {
     color: #90a4ae;
     letter-spacing: .1em;
@@ -325,4 +329,40 @@ input:-moz-placeholder {
       }
     }
   }
+}
+
+/* Sryles for Tutorial */
+
+.flex_col--1-3{
+  padding: 0 15px;
+}
+
+
+.tutorials_text {
+  background-color: #f8f8f8;
+  text-align: center;
+  margin-bottom: 120px;
+
+  h4{
+    font-size: 21px;
+    letter-spacing: 1px;
+    color: $dark-blue;
+    margin: 0;
+    padding: 40px 70px;
+  }
+}
+
+.image-tutorials { 
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.flex_container h2 {
+  margin: 0;
+  font-size: 36px;
+  text-transform: capitalize;   
+  color: $dark-blue;
+  text-align: center;
+  padding: 125px 50px; 
 }
