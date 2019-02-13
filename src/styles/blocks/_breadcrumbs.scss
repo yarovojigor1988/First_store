@@ -17,12 +17,18 @@
         position: relative;
         padding-right: 24px;
 
-        &::after {
+
+        &:after {
             content: '-';
             color: $main-color;
             position: absolute;
+            top: 50%;
             transform: translateY(-50%);
             right: 10px;
         }
     }
-}
+
+
+    &_current {
+
+    }
