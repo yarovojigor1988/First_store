@@ -21,12 +21,14 @@ $(document).on('click', '.tabs_nav-link', function(e){
 
 
 if($('.js_collapse').length > 0) {
-    $(document).on('click','.js_collapse', function(){
-        $(this).toggleClass('active');
-        $(this).next('.footer_col-main').slideToggle(400);
-        $(this).parrents('.flex_col').siblings().find('.footer_col-main').slideUp(400);
-    });
 
+    if($(window).width() < 768) {
+        $(document).on('click','.js_collapse', function(){
+            $(this).toggleClass('active');
+            $(this).next('.footer_col-main').slideToggle(400);
+            $(this).parrents('.flex_col').siblings().find('.footer_col-main').slideUp(400);
+        });
+    }
 }
 
 $(document).ready(function() {
