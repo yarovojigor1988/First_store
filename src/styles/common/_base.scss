@@ -395,6 +395,10 @@ input:-moz-placeholder {
     box-shadow: 1px 1px 2px rgba(205,214,222,0.75);
     position: relative;
 
+      &-main {
+        background-color: $white;
+      }
+
       &-img{
           display: block;
           width: 100%;
@@ -563,12 +567,10 @@ input:-moz-placeholder {
   }
 }
 
-.slide_product {
-  padding: 0 15px;
-}
-
 .slick-dots {
   list-style-type: none;
+
+  
 }
 
 .slick-dots li {
@@ -591,6 +593,10 @@ input:-moz-placeholder {
   border-color: #fff;
   color: transparent;
   outline: none;
+
+  @media(max-width: 767px) {
+    margin-top: 0;
+  }
 }
 
 .slick-dots li.slick-active button{
