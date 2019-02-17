@@ -882,7 +882,6 @@ input:-moz-placeholder {
       width: 20px;
       height: 20px;
       margin-right: 10px;
-      margin-left: -24px;
     }
 
     .section_trending-product {
@@ -1058,14 +1057,16 @@ input:-moz-placeholder {
 
 .section_form {
   width: 730px;
-  height: 488px;
+  height: 485px;
   background-color: $main-color;
   font-family: $f-family-base;
-  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   
 
   @media (max-width: 1023px) {
@@ -1073,17 +1074,29 @@ input:-moz-placeholder {
   }
 
   @media (max-width: 767px) {
-    width: 250px;
-    height: 350px;
+    height: 360px;
   }
-  
+}
+
+.form_row {
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+
+  @media (max-width: 767px) {
+    align-items: center;
+  }
+
   >h3 {
     font-size: 48px;
     color: $white;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-    padding: 92px 0 42px;
+    padding: 90px 0 40px;
 
     @media (max-width: 767px) {
       font-size: 24px;
@@ -1120,35 +1133,15 @@ input:-moz-placeholder {
   color: $white;
   margin-bottom: 8px;
   outline: none;
+  padding-left: 40px;
 
   @media (max-width: 767px) {
-    width: 200px;
+    width: 300px;
     font-size: $f-size-base;
   }
 }
 
-.register {
-  width: 250px;
-  height: 50px;
-  background-color: #76ae36;
-  border: none;
-  font-size: 18px;
-  text-transform: capitalize;
-  margin-bottom: 8px;
-  text-align: center;
-  outline: none;
 
-  >a {
-    color: $white;
-  }
-
-  @media (max-width: 767px) {
-    width: 200px;
-    margin-right: 10px;
-    font-size: $f-size-base;
-  }
-  
-}
 
 .fa-user,
 .fa-unlock,
@@ -1156,18 +1149,36 @@ input:-moz-placeholder {
   position: relative;
 }
 
+.fa-pencil-square-o {
+  margin-right: 10px;
+}
+
 .subscription {
+  max-width: 400px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
 
-  >i.fa {
-    margin-right: -28px;
-    font-size: 14px;
-    color: $white;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    max-width: 300px;
 
-    @media (max-width: 767px) {
-      top: 75px;
-      right: 200px;
-    }
+
   }
+}
+
+.subscription a {
+  display: flex;
+  color: $white;
+  background-color: #76ae36;
+  flex-grow: 2;
+  align-items: center;
+  text-transform: capitalize;
+  height: 50px;
+  padding: 0 35px;
+
 }
 
 .subscribe {
@@ -1178,53 +1189,52 @@ input:-moz-placeholder {
   font-weight: bold;
   text-transform: uppercase;
   background-color: $background-color;
-  margin-right: 18px;
-  margin-left: -10px;
   border: none;
-  margin-bottom: 24px;
   padding: 0;
+  margin-right: 10px;
 
   @media (max-width: 767px) {
-    width: 200px;
-    margin-right: 10px;
+    width: 300px;
     font-size: 12px;
+    margin: 0 0 10px 0;
   }
 }
+
 
 .form_input-popup {
+  position: relative;
   
->input::-webkit-input-placeholder {
-  color: $white;
-}
-
->input:-moz-placeholder {
-  color: $white;
-}
-  
->i.fa {
-  margin-right: -28px;
-  font-size: 14px;
+  >input::-webkit-input-placeholder {
     color: $white;
-}
-
->.form_input-green {
-  color: #fff;
-}
-
->i.fa + input {
-  padding-left: 36px;
   }
+
+  >input:-moz-placeholder {
+    color: $white;
+  }
+
+  >.form_input-green {
+    color: #fff;
+  }
+
+}
+
+.form_input-popup i {
+  font-size: 14px;
+  color: $white;
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-65%);
+  line-height: 1;
 }
 
 .line-help {
   text-transform: capitalize;
   font-size: 18px;
   color: $white;
-  margin-left: -266px;
 
   @media (max-width: 767px){
-    margin-left: 0;
-    font-size: $f-size-base;
+    font-size: 16px;
   }
 }
 
