@@ -17,9 +17,6 @@ $(document).on('click', '.tabs_nav-link', function(e){
     $(tabId).siblings('.tabs_tab').hide(400);
 });
 
-
-
-
 if($('.js_collapse').length > 0) {
 
     if($(window).width() < 768) {
@@ -35,7 +32,6 @@ $(document).ready(function() {
 
     if($('.product_carousel').length > 0) {
         $('.product_carousel').slick({
-            arrows: false,
             dots: true,
             infinite: true,
             autoplay: true,
@@ -75,7 +71,8 @@ $(document).ready(function() {
         $('.js_login-popup').magnificPopup({
             items: {
                 src: '#popup',
-                type: 'inline'
+                type: 'inline',
+                closeBtnInside: true
             }
         });
     }

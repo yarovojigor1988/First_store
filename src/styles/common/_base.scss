@@ -139,8 +139,6 @@
   align-items: center;
   position: relative;
 
-
-
   >ul{
     display: flex;
     flex-wrap: wrap;
@@ -241,9 +239,6 @@
   }
 }
 
-// input {
-//   box-shadow: 1px 1px 10px rgba(139, 195, 74, .75);
-// }
 ul {
   margin: 0;
   padding: 0;
@@ -569,8 +564,6 @@ input:-moz-placeholder {
 
 .slick-dots {
   list-style-type: none;
-
-  
 }
 
 .slick-dots li {
@@ -603,13 +596,6 @@ input:-moz-placeholder {
   background-color: $main-color;
 }
 
-.slick-prev.slick-arrow.slick-initialized.slick-slider {
-  display: none;
-}
-
-.slick-next.slick-arrow.slick-initialized.slick-slider{
-  display: none;
-}
 
 .section_become {
   display: flex;
@@ -617,7 +603,7 @@ input:-moz-placeholder {
   width: 100%;
   text-align: center;
   background-color: #f4f6f5;
-  padding: 110px 0 120px;
+  padding: 130px 0 140px;
 }
 
 .flex_container-grey {
@@ -756,21 +742,19 @@ input:-moz-placeholder {
       width: 75%;
     }
 
-
-
     .welcome {
-      
       min-width: auto;
       
       &_text {
       margin-top: 40px;
       
-      p{
+      p {
         font-size: 16px;
       }
-    }}
-    .container-dark-grey {
+    }
+  }
 
+    .container-dark-grey {
       height: 100%;
 
       h2 {
@@ -781,9 +765,7 @@ input:-moz-placeholder {
     }
 
     .section_become {
-      width: auto;
-      padding-top: 40px;
-      padding-bottom: 0;
+      padding: 40px 0 40px;
     }
 
     .text-center h4 {
@@ -813,12 +795,8 @@ input:-moz-placeholder {
       height: 34px;
     }
 
-    .section_trending-product {
-      padding: 60px 0 60px;
-
-      h2 {
+    .section_trending-product h2{
         margin-bottom: 20px;
-      }
     }
 
   }
@@ -847,7 +825,6 @@ input:-moz-placeholder {
       margin-top: 15px;
       margin-bottom: 15px;
 
-      
       p{
         font-size: 11px;
       }
@@ -895,7 +872,6 @@ input:-moz-placeholder {
 
     .section_become {
       width: auto;
-      padding: 20px 0;
     }
 
     .info-text {
@@ -915,7 +891,6 @@ input:-moz-placeholder {
     }
 
     .footer {
-
       min-height: auto;
 
       &_inner {
@@ -959,10 +934,7 @@ input:-moz-placeholder {
       right: 0;
       z-index: 999;
       display: none;
-
-
     
-
     & ul{
       padding: 15px 0;
       text-align: center;
@@ -1047,7 +1019,7 @@ input:-moz-placeholder {
     }
   }
 
-  @media(min-width: 768px){
+  @media(min-width: 767px){
     .nav_toggle{
         display: none; 
     }
@@ -1064,3 +1036,177 @@ input:-moz-placeholder {
       display: none;
     }
 }
+
+.section_form {
+  width: 730px;
+  height: 488px;
+  background-color: $main-color;
+  font-family: $f-family-base;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+
+  @media (max-width: 1023px) {
+    width: 500px;
+  }
+
+  @media (max-width: 767px) {
+    width: 250px;
+    height: 350px;
+  }
+  
+  >h3 {
+    font-size: 48px;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 92px 0 42px;
+
+    @media (max-width: 767px) {
+      font-size: 24px;
+      padding: 20px 20px;
+    }
+  }
+}
+
+.popup {
+  position: relative;
+  
+  .mfp-close {
+    color: $white;
+    font-size: 24px;
+  
+    @media (max-width: 767px) {
+      font-size: 18px;
+    }
+
+  //   &:before {
+  //     content: '\f00d';
+  //     font: 24px 'FontAwesome';
+  // }
+  } 
+}
+
+.form_input-green {
+  width: 400px;
+  height: 44px;
+  background-color: #76ae36;
+  border: none;
+  font-size: $f-size-base;
+  text-transform: capitalize;
+  color: $white;
+  margin-bottom: 8px;
+  outline: none;
+
+  @media (max-width: 767px) {
+    width: 200px;
+    font-size: $f-size-base;
+  }
+}
+
+.register {
+  width: 250px;
+  height: 50px;
+  background-color: #76ae36;
+  border: none;
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+  text-align: center;
+  outline: none;
+
+  >a {
+    color: $white;
+  }
+
+  @media (max-width: 767px) {
+    width: 200px;
+    margin-right: 10px;
+    font-size: $f-size-base;
+  }
+  
+}
+
+.fa-user,
+.fa-unlock,
+.fa-pencil-square-o {
+  position: relative;
+}
+
+.subscription {
+
+  >i.fa {
+    margin-right: -28px;
+    font-size: 14px;
+    color: $white;
+
+    @media (max-width: 767px) {
+      top: 75px;
+      right: 200px;
+    }
+  }
+}
+
+.subscribe {
+  width: 140px;
+  height: 50px;
+  font-size: $f-size-base;
+  color: $black;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: $background-color;
+  margin-right: 18px;
+  margin-left: -10px;
+  border: none;
+  margin-bottom: 24px;
+  padding: 0;
+
+  @media (max-width: 767px) {
+    width: 200px;
+    margin-right: 10px;
+    font-size: 12px;
+  }
+}
+
+.form_input-popup {
+  
+>input::-webkit-input-placeholder {
+  color: $white;
+}
+
+>input:-moz-placeholder {
+  color: $white;
+}
+  
+>i.fa {
+  margin-right: -28px;
+  font-size: 14px;
+    color: $white;
+}
+
+>.form_input-green {
+  color: #fff;
+}
+
+>i.fa + input {
+  padding-left: 36px;
+  }
+}
+
+.line-help {
+  text-transform: capitalize;
+  font-size: 18px;
+  color: $white;
+  margin-left: -266px;
+
+  @media (max-width: 767px){
+    margin-left: 0;
+    font-size: $f-size-base;
+  }
+}
+
+
