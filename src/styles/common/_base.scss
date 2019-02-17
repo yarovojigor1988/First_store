@@ -443,6 +443,12 @@ input:-moz-placeholder {
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+
+        @media(max-width: 1390px) {
+          padding: 10px 10px 5px;
+        }
+
+
       }
   }
 
@@ -452,6 +458,10 @@ input:-moz-placeholder {
     display: flex;
     align-items: center;
     margin-right: 14px;
+
+    @media(max-width: 1390px) {
+      margin-right: 4px;
+    }
 
     &-icon {
       width: 30px;
@@ -475,11 +485,20 @@ input:-moz-placeholder {
     &-stars {
       display: flex;
       padding-right: 14px;
+
+      @media(max-width: 1390px) {
+        padding-right: 4px;
+      }
+
     }
 
     &-star {
       color: #ffa726;
       padding-right: 3px;
+
+      @media(max-width: 1390px) {
+        padding-right: 1px;
+      }
     }
 
     &-views {
