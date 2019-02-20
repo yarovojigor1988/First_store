@@ -24,6 +24,10 @@
         &-img{
             display: block;
             width: 100%;
+
+            &--product-page {
+                height: 180px;
+            }
         }
   
         &-info {
