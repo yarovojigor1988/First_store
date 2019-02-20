@@ -7,6 +7,15 @@
             max-width: 99999px;
             width: 100%;
         }
+
+        &-bcolor {
+            background-color: #f4f6f5;
+            max-width: 99999px;
+            width: 100%;
+            display: flex;
+            justify-content: center; 
+            margin-bottom: 130px;   
+        }
     }
 
 
@@ -33,6 +42,11 @@
         padding: 0 15px;
         width: 100%;
         display: flex;
+
+        &--1 {
+            width: 100%;
+        }
+
         &--1-2 {
             width: 50%;
         }
@@ -73,9 +87,20 @@
 .content {
     width: 100%;
     max-width: calc(100% - 270px);
+    padding-left: 30px;
 
     &:only-child {
         width: 100%;
     }
 }
 
+.js_grid-list {
+
+    .flex_row {
+        display: block;
+
+        [class^="flex_col"] {
+            width: 100%;
+        }
+    }
+}
