@@ -38,7 +38,6 @@ $b-radius-base: 3px;
 
 	// 2.5 Forms
 $input-color: $text-color;
-$input-border-color: $black;
 $input-border-focus: $main-color;
 
 	// 2.6 Nav and links
@@ -54,3 +53,9 @@ $btn-main-color: $black;
 $btn-main-border: $black;
 $btn-main-bg: $white;
 $btn-main-hover: darken($btn-main-bg, 20%);
+
+$form-border-color: #dcdcdc;
+$input-border-color: #dcdcdc;
+
+$input-bg: #f9f9f9;
+$input-color: $text-color;

@@ -106,4 +106,18 @@ $(document).ready(function() {
             $('.products_grid').addClass('js_grid-table');
         });
     }
+
+
+    $('.form_file').on('change', function(){
+        var $el = $(this),
+            fileName,
+            $block = $el.parent().next('.form_file-val');
+        if ($el.val().lastIndexOf('\\')) {
+          var i = $el.val().lastIndexOf('\\') + 1;
+        } else {
+          var i = $el.val().lastIndexOf('/') + 1;
+        }
+        fileName = $el.val().slice(i);
+        $block.html(fileName);
+    });
 });

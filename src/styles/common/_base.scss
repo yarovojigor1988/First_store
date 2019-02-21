@@ -280,12 +280,12 @@ h1 {
   position: relative;
 }
 
-.form_input-holder{
+.form_input-holder1{
     margin: 0 auto;
     text-align: center;
 }
 
-.form_input{
+.form_input1{
 	  width: 670px;
 	  margin-bottom: 170px;
     padding: 25px;
@@ -301,11 +301,11 @@ h1 {
 
 }
 
-.form_input:focus{
+.form_input1:focus{
 	box-shadow: 1px 1px 10px rgba(139, 195, 74, .75);
 }
 
-.form_input-holder i{
+.form_input-holder1 i{
 	position: relative;
     z-index: 1;
     left: -45px;
@@ -624,7 +624,7 @@ input:-moz-placeholder {
       font-size: 32px;
     }
 
-    .form_input {
+    .form_input1 {
       width: 75%;
     }
 
@@ -702,7 +702,7 @@ input:-moz-placeholder {
       font-size: 18px;
     }
 
-    .form_input {
+    .form_input1 {
       width: auto;
       margin-bottom: 40px;
     }
@@ -947,7 +947,6 @@ input:-moz-placeholder {
 
 .form_row {
   position: relative;
-  max-width: 400px;
   width: 100%;
   display: flex;
   flex-direction: column;
