@@ -7,6 +7,10 @@
       align-items: stretch;
       flex-wrap: wrap;
 
+      &>a {
+        width: 100%;
+      }
+
         &--product-page {
             box-shadow: none;
         }
@@ -24,10 +28,6 @@
         &-img{
             display: block;
             width: 100%;
-
-            &--product-page {
-                height: 180px;
-            }
         }
   
         &-info {
@@ -36,6 +36,10 @@
             padding: 25px 25px 15px;
             justify-content: space-between;
             align-items: center;
+
+            @media(max-width: 900px) {
+              padding: 20px 5px 10px 5px;
+            }            
 
             &--product-page {
             padding: 20px 0 10px 0;

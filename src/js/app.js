@@ -28,6 +28,17 @@ if($('.js_collapse').length > 0) {
     }
 }
 
+if($('.js_collapse-sidebar').length > 0) {
+
+    if($(window).width() < 768) {
+        $(document).on('click','.js_collapse-sidebar', function(){
+            $(this).toggleClass('active-sidebar');
+            $(this).next('.sidebar_content').slideToggle(400);
+            $(this).parrents('.sidebar').siblings().find('.sidebar_content').slideUp(400);
+        });
+    }
+}
+
 $(document).ready(function() {
 
     if($('.product_carousel').length > 0) {

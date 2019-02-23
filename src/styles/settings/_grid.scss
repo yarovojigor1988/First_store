@@ -67,20 +67,14 @@
         &--1-3 {
             width: calc(100% / 3);
 
-            @media (max-width: 767px) {
+            @media (max-width: 1200px) {
+                width: 50%;
+            }
+
+            @media (max-width: 800px) {
                 width: 100%;
             }
         }
-    }
-}
-
-.content {
-    width: 100%;
-    max-width: calc(100% -270px);
-
-
-    &:only-child {
-        max-width: 100%;
     }
 }
 
@@ -91,6 +85,12 @@
 
     &:only-child {
         width: 100%;
+    }
+
+    @media (max-width: 767px) {
+        max-width: 100%;
+        padding-left: 0;
+
     }
 }
 
