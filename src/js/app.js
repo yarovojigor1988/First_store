@@ -41,6 +41,11 @@ if($('.js_collapse-sidebar').length > 0) {
 
 $(document).ready(function() {
 
+    $('.js_tools-opener').on('click', function(){
+        $(this).toggleClass('opened');   
+        $(this).next('.header_tools').slideToggle(400);
+    })
+
     if($('.product_carousel').length > 0) {
         $('.product_carousel').slick({
             dots: true,

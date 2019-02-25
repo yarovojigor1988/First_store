@@ -10,99 +10,123 @@
     <link rel="stylesheet" href="../styles/styles.min.css">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="flex_container">
-            <div class="header">
-                <div class="header_content">
-                    <div class="logo_img">
-                        <img src="../images/logo.png" alt="Logo">
-                    </div>
-                    <div class="header_content-col">
-                    </div>
-                    <div class="header_content-col header_phone">
-                        <div class="header_text"><span class="text_red">Need help?</span> Talk to an expert:</div>
-                        <a class="header_text" href="tel:+61 3 8376 6284">+61 3 8376 6284</a>
-                    </div>
-                    <div class="header_content-col mobile_header_phone">
-                        <a href="tel:+61 3 8376 6284"><i class="fa fa-phone-square" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <ul class="header_tools">
-                        <li class="header_tools-item">
-                            <button class="js_drop-opemet"></button>
-                            <div class="header_tools-drop">
-                                <ul class="header_tools-list">
-                                    <li class="header_tools-message"></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="header_tools-item">
-                            <button class="js_drop-opemet"></button>
-                            <div class="header_tools-drop">
-                                <ul class="header_tools-list">
-                                    <li class="header_tools-message"></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="header_tools-item">
-                            <button class="js_drop-opemet"></button>
-                            <div class="header_tools-drop">
-                                <ul class="header_tools-basket">
-                                    <li class="header_tools-goods"></li>
-                                </ul>
-                                <dl class="basket_sum">
-                                    <dt></dt>
-                                    <dd></dd>
-                                </dl>
-                                <div class="basket_btns">
-                                    <button class="btn_basket--main"></button>
-                                    <button class="btm_basket--warn"></button>
+    <main class="main">
+        <div class="wrapper">
+            <header class="header">
+                <div class="header_container">
+                    <div class="header_content">
+                        <div class="logo_img">
+                            <img src="../images/logo.png" alt="Logo">
+                        </div>
+                        <div class="header_content-col">
+                        </div>
+                        <div class="header_content-col header_phone">
+                            <div class="header_text"><span class="text_red">Need help?</span> Talk to an expert:</div>
+                            <a class="header_text" href="tel:+61 3 8376 6284">+61 3 8376 6284</a>
+                        </div>
+                        <div class="header_content-col mobile_header_phone">
+                            <a href="tel:+61 3 8376 6284"><i class="fa fa-phone-square" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <button class="js_tools-opener desktop-hidden">menu</button>
+                        <ul class="header_tools">
+                            <li class="header_tools-item">
+                                <button class="js_drop-opener header_tools-round">
+                                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                                    <div class="header_tools-count bg-yellow">8</div>
+                                </button>
+                                <div class="header_tools-drop">
+                                    <ul class="header_tools-list">
+                                        <li class="header_tools-message"></li>
+                                    </ul>
                                 </div>
-                            </div>
+                            </li>
+                            <li class="header_tools-item">
+                                <button class="js_drop-opener header_tools-round">
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                    <div class="header_tools-count bg-orange">5</div>
+                                </button>
+                                <div class="header_tools-drop">
+                                    <ul class="header_tools-list">
+                                        <li class="header_tools-message"></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header_tools-item">
+                                <button class="js_drop-opener header_tools-round">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <div class="header_tools-count bg-green">8</div>
+                                </button>
+                                <div class="header_tools-drop">
+                                    <ul class="header_tools-basket">
+                                        <li class="header_tools-goods"></li>
+                                    </ul>
+                                    <dl class="basket_sum">
+                                        <dt></dt>
+                                        <dd></dd>
+                                    </dl>
+                                    <div class="basket_btns">
+                                        <button class="btn_basket--main"></button>
+                                        <button class="btm_basket--warn"></button>
+                                    </div>
+                                </div>
 
-                        </li>
-                        <li class="header_tools-item">
-                            <button class="js_drop-opemet"></button>
-                            <div class="header_tools-drop">
+                            </li>
 
-                            </div>
+                            <li class="header_tools-item">
+                                <button class="js_drop-opener header_user-opener">
+                                    <div class="header_user-icon"></div>
+                                    <div class="header_user-info">
+                                        <div class="header_user-name">Mike Hussy</div>
+                                        <div class="header_user-money">171.00</div>
+                                    </div>
+                                </button>
+                                <div class="header_tools-drop">
 
-                        </li>
-                        <li class="header_tools-item"><button class="btn btn_register"></button></li>
-                    </ul>
+                                </div>
 
-                    <buttom class="mobile_nav_toggle"><span></span></buttom>
+                            </li>
+                            <li class="header_tools-item">
+                                <button class="btn btn--warn">
+                                    <i class="fa fa-sign-out desktop-hidden" aria-hidden="true"></i>
+                                    <span class="mobile-hidden">Loguot</span>
+                                </button>
+                            </li>
+                        </ul>
+
+                        <buttom class="mobile_nav_toggle"><span></span></buttom>
+                    </div>
+                </div>
+            </header>
+            <div class="flex_container-dark-blue">
+                <div class="header_wrap">
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">WordPress</a></li>
+                            <li><a href="#">Joomla</a></li>
+                            <li><a href="#">PSD</a></li>
+                            <li><a href="#">Plugins</a></li>
+                            <li><a href="#">Components</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="welcome" style="background-image: url(../images/banner_image.jpg);">
+                <div class="welcome_text welcome_text--products">
+                    <p> Premium WordPress Themes, Web Templates and Many More...</p>
+                </div>
+                <div class="form_input-holder1">
+                    <input type="text" placeholder="Search Your Keywords..." class="form_input1 form_input1--products">
+                    <i class=" fa fa-search"></i>
                 </div>
             </div>
         </div>
-        <div class="flex_container-dark-blue">
-            <div class="header_wrap">
-                <nav class="nav">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">WordPress</a></li>
-                        <li><a href="#">Joomla</a></li>
-                        <li><a href="#">PSD</a></li>
-                        <li><a href="#">Plugins</a></li>
-                        <li><a href="#">Components</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Help</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div class="welcome" style="background-image: url(../images/banner_image.jpg);">
-            <div class="welcome_text welcome_text--products">
-                <p> Premium WordPress Themes, Web Templates and Many More...</p>
-            </div>
-            <div class="form_input-holder1">
-                <input type="text" placeholder="Search Your Keywords..." class="form_input1 form_input1--products">
-                <i class=" fa fa-search"></i>
-            </div>
-        </div>
-    </div>
+    </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../js/app.min.js"></script>
 </body>
