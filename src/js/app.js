@@ -17,6 +17,15 @@ $(document).on('click', '.tabs_nav-link', function(e){
     $(tabId).siblings('.tabs_tab').hide(400);
 });
 
+$(document).on('click', '.pr-details-tabs-link', function(e){
+    e.preventDefault();
+    var tabId = $(this).attr('href');
+    $(this).addClass('prtabs-active');
+    $(this).parent('li').siblings().find('.pr-details-tabs-link').removeClass('prtabs-active');
+    $(tabId).show(400);
+    $(tabId).siblings('.pr-details-tabs-tab').hide(400);
+});
+
 if($('.js_collapse').length > 0) {
 
     if($(window).width() < 768) {
