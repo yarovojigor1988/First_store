@@ -1,10 +1,8 @@
-.js_drop-opener {
+.header_drop-opener {
     background-color: transparent;
     border: none;
     box-shadow: none;
     outline: none;
-    padding: 0;
-    margin: 0;
     padding: 0;
     margin: 0;
 
@@ -39,12 +37,27 @@
             left: 0;
             right: 0;
             background-color: #fff;
-            border: 1px solid black;
+            border-width: 0 1px 1px;
+            border: 1px solid #dcdcdc;
         }
 
         &-item {
             padding: 30px 8px;
             position: relative;
+
+            @media (max-width:$desktop-df) {
+                background-color: $main-color;
+                padding: 0;
+                transition: background-color .3s ease;
+
+                &:not(:last-of-type) {
+                    border-bottom: 1px solid #fff;
+                }
+
+                &.drop-opened{
+                    background-color:darken($main-color, 20%);
+                }
+            }
 
             &:hover {
                 .header_tools-drop {
@@ -53,8 +66,24 @@
                 }
             }
 
-            &--logut {
+            &--logout {
                 margin-left: 27px;
+                text-align: center;
+
+                @media(max-width: $desktop-df) {
+                    margin: 0;
+
+
+                    .btn--warn {
+                        background-color: transparent;
+                        font-size: 16px;
+                        padding: 0 0;
+                        height: 46px;
+                        margin: 0 auto;
+
+
+                    }
+                }
 
             }
         }
@@ -72,6 +101,27 @@
             color: #707070;
             line-height: 1;
             font-size: 16px;
+
+            @media(max-width: $desktop-df) {
+
+                border-radius: 0;
+                padding: 15px 10px;
+                color: $white;
+                height: auto;
+                width: 100%;
+                text-transform: uppercase;
+                background-color: transparent;
+
+                i { 
+                    display: none;
+                }
+            }
+            
+        }
+        &-category {
+            @media(min-width: $desktop) {
+                display: none;
+            }
         }
 
         &-count {
@@ -88,7 +138,12 @@
             justify-content: center;
             color: $white;
 
-
+            @media (max-width: $desktop-df) {
+                top: 50%;
+                transform: translateY(-50%);
+                right: 5px;
+                border: 1px solid $white;
+            }
         }
 
         &-drop {
@@ -106,6 +161,7 @@
                 visibility: visible;
                 opacity: 1;
                 position: static;
+                background-color: #f5f5f5;
             }
         }
 
@@ -131,6 +187,16 @@
                 line-height: 1;
 
             }
+
+            @media(max-width: $desktop-df) {
+                justify-content: center;
+                padding: 5px 10px;
+                margin: 0 auto;
+
+                &::after{
+                    display: none;
+                }
+            }
         }
 
         &-icon {
@@ -148,8 +214,12 @@
             font-weight: bold;
             font-size: 14px;
             line-height: 1;
+
+            @media(min-width: $desktop-df) {
+                display: none;
+            }
         }
-    }
+    
 
     &-info {
         text-align: left;
@@ -160,7 +230,14 @@
         font-weight: 500;
         line-height: 1;
         margin-bottom: 8px;
+
+        @media (max-width: $desktop-df){
+            font-size: 16px;
+            margin-bottom: 0;
+            color: $white;
+        }
         
     }
+}
 }
 

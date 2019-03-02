@@ -3,6 +3,7 @@
         max-width: 1200px;
         width: 100%;
         padding: 0 15px;
+        margin: 0 auto;
         &--fw {
             max-width: 99999px;
             width: 100%;
@@ -71,7 +72,7 @@
                 width: 50%;
             }
 
-            @media (max-width: 800px) {
+            @media (max-width: 900px) {
                 width: 100%;
             }
         }
@@ -97,7 +98,7 @@
 .js_grid-list {
 
     .flex_row {
-        display: block;
+        display: block;        
 
         [class^="flex_col"] {
             width: 100%;

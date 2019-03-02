@@ -41,6 +41,7 @@
 .form {
     background-color: $white;
     border: 1px solid $form-border-color;
+    margin-bottom: 100px;
 
     &_title {
         border-bottom: 1px solid $form-border-color;
@@ -72,8 +73,6 @@
                 }
             }
         }
-
-
     }
 
     &_label {
@@ -135,6 +134,10 @@
                 font: 14px 'FontAwesome';
             }
         }
+
+        &_select_placeholder {
+            display: none;
+        }
     }
 
     &_textarea {
@@ -163,6 +166,7 @@
             margin-right: 10px;
             font-size: 12px;
             border: 1px solid $input-border-color;
+            background-color: $white;
         }
 
         &-val {
@@ -173,7 +177,42 @@
         &-holder {
             padding: 10px 15px;
             border: 1px solid $input-border-color;
-            background-color: $white;
         }
     }
+
+    .placeholder {
+        ::-webkit-input-placeholder {
+            color:#707070;
+            letter-spacing: normal;
+        }
+        ::-moz-placeholder {
+            color:#707070;
+            letter-spacing: normal;  
+        }
+        :-moz-placeholder {
+            color:#707070;
+            letter-spacing: normal;
+        }
+        :-ms-input-placeholder {
+            color:#707070;
+            letter-spacing: normal;
+        }
+    }
+
+    .btn_submit {
+        font-size: 15px;
+        color: $white;
+        padding: 15px 35px;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        outline: none;
+        box-shadow: 0;
+        background-color: $green;
+        margin: 40px 0 60px 220px;
+        }
+
 }
+
