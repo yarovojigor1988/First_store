@@ -11,17 +11,44 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="wrapper_flexlix">
+    <div class="wrapper_flexfix">
         <main class="main">
+            <div class="flex_container-dark-blue">
+                <div class="header_wrap">
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">WordPress</a></li>
+                            <li><a href="#">Joomla</a></li>
+                            <li><a href="#">PSD</a></li>
+                            <li><a href="#">Plugins</a></li>
+                            <li><a href="#">Components</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="welcome" style="background-image: url(../images/banner_image.jpg);">
+                <div class="welcome_text welcome_text--products">
+                    <p> Premium WordPress Themes, Web Templates and Many More...</p>
+                </div>
+                <div class="form_input-holder1">
+                    <input type="text" placeholder="Search Your Keywords..." class="form_input1 form_input1--products">
+                    <i class=" fa fa-search"></i>
+                </div>
+            </div>
             <div class="flex_container">
                 <ul class="breadcrumbs">
-                    <li class="breadcrumbs_item">
-                        <a href="" class="breadcrumbs_current">product page</a>
-                    </li>
-                    <li class="breadcrumbs_item">
-                        <span class="breadcrumbs_current">product page</span>
-                    </li>
-                </ul>
+                        <li class="breadcrumbs_item">
+                            <a href="/" class="breadcrumbs_link">home</a>
+                        </li>
+                        <li class="breadcrumbs_item">
+                            <span class="breadcrumbs_current">upload-product</span>
+                        </li>
+                    </ul>
                 <form action="" class=" form form_upload">
                     <div class="form_section">
                         <div class="form_title">
@@ -33,9 +60,10 @@
                                     <label for="categories" class="form_label">select categories</label>
                                     <div class="form_input-holder form_select-holder">
                                         <select name="categories" id="categories" class="form_input form_select">
-                                            <option value="category 1">category 1</option>
-                                            <option value="category 2">category 2</option>
-                                            <option value="category 3">category 3</option>
+                                            <option value="" class="select_placeholder">Select</option>
+                                            <option value="category ">category 1</option>
+                                            <option value="category 1">category 2</option>
+                                            <option value="category 2">category 3</option>
                                         </select>
                                     </div>
                                 </div>
@@ -43,15 +71,17 @@
                             <div class="form_row">
                                 <div class="form_block required">
                                     <label for="name" class="form_label">product name</label>
-                                    <div class="form_input-holder">
-                                        <input class="form_input" type="text" id="name">
+                                    <div class="form_input-holder placeholder">
+                                        <input class="form_input" type="text" placeholder="Enter your product name here..."  id="name">
                                     </div>
                                 </div>
                             </div>
                             <div class="form_row">
                                 <div class="form_block required">
                                     <label for="desc" class="form_label">product description</label>
-                                    <div class="form_input-holder"><textarea name="desc" id="desc" class="form_input form_textarea"></textarea></div>
+                                    <div class="form_input-holder placeholder">
+                                        <textarea name="desc" id="desc" class="form_input form_textarea" placeholder="<h1> Type your text  here <h1>" ></textarea>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form_row">
@@ -78,11 +108,147 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="form_row">
+                                <div class="form_block required">
+                                    <label for="categories" class="form_label">file included</label>
+                                    <div class="form_input-holder form_select-holder">
+                                        <select name="categories" id="categories" class="form_input form_select">
+                                            <option value="" class="select_placeholder">Select file type</option>
+                                            <option value="category ">category 1</option>
+                                            <option value="category 1">category 2</option>
+                                            <option value="category 2">category 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_row">
+                                <div class="form_block required">
+                                    <label for="name" class="form_label">File Dimensions</label>
+                                    <div class="form_input-holder placeholder">
+                                        <input class="form_input" type="text" placeholder="Enter the item  dimentions here .."  id="name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_row">
+                                <div class="form_block required">
+                                    <label for="name" class="form_label">item tag</label>
+                                    <div class="form_input-holder placeholder">
+                                        <input class="form_input" type="text" placeholder="Enter Tag Here..."  id="name">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="form_section"></div>
+                    <div class="form_section">
+                        <div class="form_title">
+                            set your price (US$)
+                        </div>
+                        <div class="form_main">
+                            <div class="form_row">
+                                <div class="form_block required">
+                                    <label for="name" class="form_label">Regular License</label>
+                                    <div class="form_input-holder placeholder">
+                                        <input class="form_input" type="text" placeholder="$00.00"  id="name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_row">
+                                <div class="form_block required">
+                                    <label for="name" class="form_label">Extended License</label>
+                                    <div class="form_input-holder placeholder">
+                                        <input class="form_input" type="text" placeholder="$00.00"  id="name">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn_submit">Submit</button>
                 </form>
             </div>
+            <footer class="footer">
+                <div class="footer_inner">
+                    <div class="flex_container">
+                        <div class="flex_row">
+                            <div class="flex_col flex_col--1-4">
+                                <div class="flex_col-content">
+                                    <button class="footer_col-title js_collapse">about company</button>
+                                    <div class="footer_col-main">
+                                        <div class="footer_col-text">Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce sit amet urna iat.Praesent vel rutrum purus.</div>
+                                        <div class="footer_contact-information">
+                                            <div class="footer_contact-information-text">
+                                                <div class="footer_icon">
+                                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="footer_adress">PO Box 16122 Collins Street West Victoria 8007 Australia</div>
+                                            </div>
+                                            <div class="footer_contact-information-text">
+                                                <div class="footer_icon">
+                                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                                </div>
+                                                <a href="tel:+61 3 8376 6284" class="footer_tel">+61 3 8376 6284</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex_col flex_col--1-4">
+                                <div class="flex_col-content">
+                                    <button class="footer_col-title js_collapse">join our community</button>
+                                    <div class="footer_col-main marked_list">
+                                        <ul>
+                                            <li><a href="">home</a></li>
+                                            <li><a href="">forums</a></li>
+                                            <li><a href="">become an autor</a></li>
+                                            <li><a href="">community meetups</a></li>
+                                            <li><a href="">become an affiliate</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex_col flex_col--1-4">
+                                    <div class="flex_col-content">
+                                        <button class="footer_col-title js_collapse">need help?</button>
+                                        <div class="footer_col-main marked_list">
+                                            <ul>
+                                                <li><a href="">help center</a></li>
+                                                <li><a href="">foxtar market terms</a></li>
+                                                <li><a href="">author terms</a></li>
+                                                <li><a href="">foxtar licenses</a></li>
+                                                <li><a href="">contact us</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="flex_col flex_col--1-4">
+                                <div class="flex_col-content">
+                                    <button class="footer_col-title js_collapse">follow us on</button>
+                                    <div class="footer_col-main">
+                                        <div class="footer_social-block">
+                                            <ul>
+                                                <li><a class="footer_soc-icons footer_soc-icons--facebook" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                                <li><a class="footer_soc-icons footer_soc-icons--twitter" href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a class="footer_soc-icons footer_soc-icons--youtube" href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                                                <li><a class="footer_soc-icons footer_soc-icons--pinterest" href=""><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                                                <li><a class="footer_soc-icons footer_soc-icons--linkedin" href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="footer_sing_up">
+                                            <div class="footer_sing_up-text">newsletter sign up!</div>
+                                            <div class="footer_input-holder">
+                                                <input type="email" placeholder="E-mail Adress" class="footer_form-input">
+                                                <button class="btn btn_send-mail"><i class="fa fa-location-arrow" aria-hidden="true"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copy">
+                    <div class="copy_text">© 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.</div>
+                </div>
+            </footer>
         </main>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
