@@ -5,6 +5,10 @@ $white: #fff;
 $green: #8bc34a;
 $red: #e74c3c;
 $dark-blue: #263238;
+$grey: #d4d4d4;
+$yellow: #fcb322;
+$orange: #ef6c00;
+
 
 
 	// 1.2 Other
@@ -59,3 +63,7 @@ $input-border-color: #dcdcdc;
 
 $input-bg: #f9f9f9;
 $input-color: $text-color;
+
+
+$btn-warn-bg: $red;
+$btn-warn-hover: darken($btn-warn-bg, 20%);

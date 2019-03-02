@@ -202,4 +202,42 @@
         }
       }
     }
+
+    &_card-mini {
+      display: flex;
+      justify-content: center;
+      box-shadow: 1px 1px 2px rgba(205,214,222,0.75);
+      width: 270px;
+
+      &-main {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 170px;
+          background-color: #fff;
+      }
+
+      &-img {
+          
+      }
+
+      &-info {
+          
+      }
+      
+      &-heading {
+          text-transform: capitalize;
+          font-size: 14px;
+          font-weight: 500;
+          color: $dark-blue;
+      }
+      
+      &-type {
+          font-size: 12px;
+          text-transform: capitalize;
+          font-weight: 400;
+          color: $green;
+          margin: 8px 0;  
+      }
+    }
   }

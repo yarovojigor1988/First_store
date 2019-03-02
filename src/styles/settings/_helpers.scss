@@ -1,0 +1,35 @@
+.mobile-hidden {
+    @media (max-width: $desktop-df) {
+        display: none;
+    }
+}
+
+.desktop-hidden {
+    @media (min-width: $desktop) {
+        display: none;
+    }
+}
+
+.btn {
+
+    &--warn {
+        background-color: $btn-warn-bg;
+
+        &:hover,
+        &:active {
+            background-color: $btn-warn-hover;
+        }
+    }
+}
+
+.bg-orange {
+    background-color: $orange;
+}
+
+.bg-yellow {
+    background-color: $yellow;
+}
+
+.bg-green {
+    background-color: $green;
+}
