@@ -83,7 +83,13 @@
     width: 100%;
     max-width: 270px;
     margin-bottom: 110px;
-    margin-left: 34px;  
+    margin-left: 30px;
+
+    @media(max-width: 767px) {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
     
     
     &_title {

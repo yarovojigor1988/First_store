@@ -43,6 +43,10 @@
     border: 1px solid $form-border-color;
     margin-bottom: 100px;
 
+    @media (max-width: $tablet-df) {
+        margin-bottom: 20px;
+    }
+
     &_title {
         border-bottom: 1px solid $form-border-color;
         padding: 20px 30px;
@@ -55,6 +59,11 @@
 
     &_main {
         padding: 40px 45px;
+
+        @media (max-width: $tablet-df) {
+            padding: 10px 15px;
+        }
+
     }
 
     &_row {
@@ -65,6 +74,10 @@
 
     &_block {
         display: flex;
+
+        @media (max-width: $tablet-df) {
+            flex-direction: column;
+        }
 
         &.required {
             .form_label {
@@ -84,6 +97,10 @@
             color: $main-color;
             font-size: 24px;
             line-height: 1;
+        }
+
+        @media (max-width: $tablet-df) {
+            margin-bottom: 10px;
         }
     }
 
@@ -209,10 +226,14 @@
         justify-content: center;
         border: none;
         outline: none;
-        box-shadow: 0;
+        box-shadow: none;
         background-color: $green;
         margin: 40px 0 60px 220px;
+
+        @media (max-width: $tablet-df) {
+            margin: 15px 0 15px 15px;
         }
+    }
 
 }
 

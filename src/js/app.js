@@ -1,6 +1,6 @@
-$(document).on('click', '.mobile_nav_toggle', function(){
+$(document).on('click', '.nav_toggle', function(){
     $(this).toggleClass('active');
-    $(this).next('.mobile_nav').slideToggle(400); 
+    $('.nav').slideToggle(400); 
 })
 
 $(document).on('click', '.user_toggle', function(){

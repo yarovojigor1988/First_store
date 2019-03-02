@@ -16,6 +16,10 @@
             display: flex;
             justify-content: center; 
             padding-bottom: 130px;   
+
+            @media (max-width: $tablet-df) {
+                padding-bottom: 10px;   
+            }
         }
     }
 
@@ -74,6 +78,13 @@
 
             @media (max-width: 900px) {
                 width: 100%;
+            }
+
+            &-mini {
+                width: calc(100% / 3);
+                @media (max-width: 767px) {
+                    width: 100%;
+                }
             }
         }
     }

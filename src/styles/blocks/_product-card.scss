@@ -330,6 +330,10 @@
     top: 12px;
     left: 35px;
     color: $white;
+
+    > i {
+      color: $white;
+    }
   }
 
 
@@ -339,23 +343,6 @@
     left: 30px;
     color: #fff;
   }
-}
-
-.construction-white {
-  max-width: 870px;
-  height: 458px;
-  background-color: #fff;
-  margin-bottom: 30px;
-  position: relative;
-}
-
-.construction-grey {
-  width: 830px;
-  height: 422px;
-  background-color: #d4d4d4;
-  position: absolute;
-  top: 18px;
-  left: 20px;
 }
 
 .product_price {
@@ -392,6 +379,7 @@
       font-size: $f-size-base;
       color: $dark-blue;
       margin-bottom: 24px;
+      font-weight: 500;
 
       >span {
           color: #70838d;
