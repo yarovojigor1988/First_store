@@ -8,6 +8,10 @@ $(document).on('click', '.user_toggle', function(){
     $(this).next('.user_btns').slideToggle(400); 
 })
 
+$(document).on('click', '.header_user-opener', function(){
+    $(this).next('.header_tools-user').slideToggle(400); 
+})
+
 $(document).on('click', '.tabs_nav-link', function(e){
     e.preventDefault();
     var tabId = $(this).attr('href');
